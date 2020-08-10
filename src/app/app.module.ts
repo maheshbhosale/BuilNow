@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {CompanyModule} from './company/company.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     AuthModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CompanyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
