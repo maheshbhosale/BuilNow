@@ -4,14 +4,14 @@
             <div style="font-size: 25px;font-weight:700;text-align:center">
                 Sign In
             </div>
-            <div class="d-flex justify-content-center form_container">
+            <div class="d-flex justify-content-center form_container" style="padding: 0 14%;">
                 <form [formGroup]="loginForm" (ngSubmit)="loginuser()">
                     <!-- Email -->
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input formControlName="email" type="text" name="" class="form-control input_user" value="" placeholder="email" required>
+                        <input formControlName="email" type="text" name="" class="form-control input_user" value="" placeholder="email address" required>
 
                         <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!loginForm.controls['email'].valid && (loginForm.controls['email']?.touched || submitForm)">
                             <div *ngIf="loginForm.controls['email']?.errors.required ">
