@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item dropdown active">
+                    <li *ngIf="IsLogin" class="nav-item dropdown active">
                         <a style=" color: black;font-weight: 600;font-size: 14px" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                             <span class="sr-only">(current)</span> Product
                         </a>
@@ -48,11 +48,11 @@
                           </a>
                     </li> -->
 
-                    <li class="nav-item">
+                    <li *ngIf="IsLogin" class="nav-item">
                         <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">Project Management</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li *ngIf="IsLogin" class="nav-item">
                         <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">Company Management</a>
                     </li>
 
@@ -60,12 +60,16 @@
                         <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">Why Buildnow</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li *ngIf="IsLogin" class="nav-item">
                         <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">My Orders</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">Contact us</a>
+                    </li>
+
+                    <li *ngIf="IsLogin" class="nav-item">
+                        <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" (click)="LogOut()">Logout</a>
                     </li>
 
                 </ul>
