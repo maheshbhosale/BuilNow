@@ -13,6 +13,11 @@ footer {
     color: black;
 }
 
+.fix{
+    bottom: 0px;
+    position:absolute;
+}
+
 footer p,
 a {
     font-size: 12px;
