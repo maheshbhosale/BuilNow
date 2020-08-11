@@ -9,13 +9,15 @@ import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {CompanyModule} from './company/company.module';
 import { ToastrModule } from 'ngx-toastr';
+import { RegistrationComponent } from './auth/registration/registration.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
