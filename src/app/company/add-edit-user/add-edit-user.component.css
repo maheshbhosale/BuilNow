@@ -1,0 +1,16 @@
+.length{
+    border-right: 1px solid black;
+    height: 90vh;
+}
+button.butn{
+    background: rgb(0, 255, 242);
+  }
+    .butn:hover{
+      background: rgb(0, 255, 242);
+    }
+    @media screen and (min-device-width: 720px) and (max-device-width: 1280px)  {
+      .length{
+        border-right: 1px solid black;
+        height: 97.5vh;
+    }
+  }
