@@ -9,8 +9,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {CompanyModule} from './company/company.module';
 import { ToastrModule } from 'ngx-toastr';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     CompanyModule,
     ToastrModule.forRoot(), // ToastrModule added
-
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

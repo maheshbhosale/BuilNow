@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MustMatch } from '../../_helpers/must-match.validator'
 import { Router } from '@angular/router';
+import {CompanyUser} from '../company.model';
+import { BehavioursubService } from 'src/app/shared/services/behavioursub.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-edit-user',
@@ -12,15 +15,17 @@ export class AddEditUserComponent implements OnInit {
 
   registerForm: FormGroup;
   submitted = false;
-  constructor(private fb: FormBuilder, private router: Router) { }
+  user: CompanyUser;
+  constructor(private fb: FormBuilder, private router: Router,
+    private readonly behaviourSubjectService:BehavioursubService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.registerForm = this.fb.group({
-      profile: ['', Validators.required],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       company: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      role: ['', Validators.required],
       address: ['', Validators.required],
       city: ['', Validators.required],
       state: ['', Validators.required],
@@ -36,27 +41,12 @@ export class AddEditUserComponent implements OnInit {
   }
   // convenience getter for easy access to form fields
   get f() { return this.registerForm.controls; }
+  
   showNextPage() {
-    let Profile = this.registerForm.get('profile').value;
-
-    if (Profile === 'Owner') {
-      this.router.navigate(['/projectlocation']);
-    }
-    else if (Profile === 'Vendor'){
-      this.router.navigate(['/vendorregistrationpage1']);
-    }
+    this.user=this.registerForm.value;
+    this.behaviourSubjectService.users.push(this.user);
+    this.toastr.success('User created successfully');
+    this.router.navigate(['/company']);
   }
-  onSubmit() {
-    this.submitted = true;
-
-    // stop here if form is invalid
-    if (this.registerForm.invalid) {
-      return;
-    }
-
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
-    console.log(this.registerForm.value);
-
-
-  }
+  
 }

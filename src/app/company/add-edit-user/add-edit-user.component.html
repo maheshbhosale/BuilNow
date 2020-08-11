@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col col-sm-4 col-md-3 col-lg-6 length">
             <h5 style="border-bottom: 1px solid black;font-family:Helvetica,Arial,sans-serif;">Create New User</h5>
-            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <form [formGroup]="registerForm">
                 <div class="row">
                     <div class="col-6">
                         <label style="font-family:Helvetica,Arial,sans-serif;">FirstName</label>
@@ -43,10 +43,10 @@
                 <div class="row">
                     <div class="col-6">
                         <label style="font-family:Helvetica,Arial,sans-serif;">Role of user</label>
-                        <input type="text" formControlName="company" style="width:100%"
-                            [ngClass]="{ 'is-invalid': submitted && f.company.errors }" />
-                        <div *ngIf="submitted && f.company.errors" class="invalid-feedback">
-                            <div *ngIf="f.company.errors.required">Company Details is required</div>
+                        <input type="text" formControlName="role" style="width:100%"
+                            [ngClass]="{ 'is-invalid': submitted && f.role.errors }" />
+                        <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
+                            <div *ngIf="f.role.errors.required">User Role is required</div>
                         </div>
                     </div>
                     <div class="col-6">
