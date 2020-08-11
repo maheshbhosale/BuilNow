@@ -13,10 +13,11 @@ footer {
     color: black;
 }
 
-.fix{
+
+/* .fix{
     bottom: 0px;
     position:absolute;
-}
+} */
 
 footer p,
 a {
