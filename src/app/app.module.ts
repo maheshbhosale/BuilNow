@@ -8,6 +8,8 @@ import { AuthModule } from './auth/auth.module';
 import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {CompanyModule} from './company/company.module';
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import {CompanyModule} from './company/company.module';
     AuthModule,
     FormsModule,
     ReactiveFormsModule,
-    CompanyModule
+    CompanyModule,
+    ToastrModule.forRoot(), // ToastrModule added
+
   ],
   providers: [],
   bootstrap: [AppComponent]
