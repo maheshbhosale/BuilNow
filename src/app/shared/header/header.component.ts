@@ -8,7 +8,7 @@ import { BehavioursubService } from '../services/behavioursub.service';
 })
 export class HeaderComponent implements OnInit {
   userData: any;
-  IsLogin = false;
+  IsLogin = true;
 
   constructor(
     private behaviourSubjectService: BehavioursubService
