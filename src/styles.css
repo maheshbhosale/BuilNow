@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~ngx-toastr/toastr.css";
+
+/* @media screen and (min-width: 1600px) {
+    footer {
+        bottom: 0px;
+        position: absolute;
+    }
+} */
+
+@media (min-width: 1920px) {
+    footer {
+        bottom: 0px;
+        position: absolute;
+    }
+}
