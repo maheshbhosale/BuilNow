@@ -13,6 +13,7 @@ export class BehavioursubService {
   LoginUserInfo = this.UserInfo.asObservable();
   public users: CompanyUser[] = [];
   public isEditUser: boolean = false;
+  public selectedUserToEdit: CompanyUser;
 
   // send data to header
   SendUserDataToHeader(data: any) {

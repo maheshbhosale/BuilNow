@@ -17,10 +17,13 @@ export class AddEditUserComponent implements OnInit {
   submitted = false;
   user: CompanyUser;
   isEditUser:boolean;
+  title: string = "Create New User";
+  button:string = "Create";
 
   constructor(private fb: FormBuilder, private router: Router,
     private readonly behaviourSubjectService:BehavioursubService, private toastr: ToastrService) { 
       this.isEditUser = this.behaviourSubjectService.isEditUser;
+      
     }
 
   ngOnInit() {
@@ -42,6 +45,28 @@ export class AddEditUserComponent implements OnInit {
     }, {
       validator: MustMatch('password', 'confirmPassword')
     });
+
+    if(this.isEditUser){
+      this.title = "Update User";
+      this.button = "Update";
+      const user =this.behaviourSubjectService.selectedUserToEdit;
+      this.registerForm.setValue({
+        firstName:user.firstName,
+        lastName:user.lastName,
+        company: user.company,
+      email: user.email,
+      role: user.role,
+      address: "efjhkruh",
+      city: "kjdfh",
+      state: "sgerg",
+      zipcode: "w,ef",
+      country: "ekhfy",
+      telephone: "ehfje",
+      fax: "skflj",
+      password: "ewfhwe",
+      confirmPassword:"shfker"
+      })
+    }
   }
   // convenience getter for easy access to form fields
   get f() { return this.registerForm.controls; }
