@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BehavioursubService } from '../services/behavioursub.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,13 +12,12 @@ export class HeaderComponent implements OnInit {
   IsLogin = true;
 
   constructor(
-    private behaviourSubjectService: BehavioursubService
+    private behaviourSubjectService: BehavioursubService, 
+    private router: Router
     ) { }
 
   ngOnInit() {
-    debugger;
     this.behaviourSubjectService.LoginUserInfo.subscribe((data) => {
-      debugger
       this.userData = data;
 
       // if(this.userData != ""){
@@ -39,6 +39,7 @@ export class HeaderComponent implements OnInit {
     const UserId =   localStorage.getItem("Id");
     if(UserId == null){
       this.IsLogin = false;
+      this.router.navigate(['/login']);
     }
 
   }
