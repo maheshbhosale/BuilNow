@@ -16,8 +16,12 @@ export class AddEditUserComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
   user: CompanyUser;
+  isEditUser:boolean;
+
   constructor(private fb: FormBuilder, private router: Router,
-    private readonly behaviourSubjectService:BehavioursubService, private toastr: ToastrService) { }
+    private readonly behaviourSubjectService:BehavioursubService, private toastr: ToastrService) { 
+      this.isEditUser = this.behaviourSubjectService.isEditUser;
+    }
 
   ngOnInit() {
     this.registerForm = this.fb.group({

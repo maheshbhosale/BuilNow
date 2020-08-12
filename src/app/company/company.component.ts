@@ -32,6 +32,7 @@ export class CompanyComponent implements OnInit {
   }
 
   editUserDetailById(id){
+    this.behaviourSubjectService.isEditUser = true;
     this.router.navigate(['/add-new-user']);
   }
 }

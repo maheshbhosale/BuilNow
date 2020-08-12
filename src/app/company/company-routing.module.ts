@@ -7,11 +7,6 @@ import { AddEditUserComponent } from './add-edit-user/add-edit-user.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'company',
-    pathMatch: 'full'
-  },
-  {
-    path: 'company',
     component: CompanyComponent
   },
   {
