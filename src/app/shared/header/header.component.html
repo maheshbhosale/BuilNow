@@ -49,7 +49,7 @@
                     </li> -->
 
                     <li *ngIf="IsLogin" class="nav-item">
-                        <a class="nav-link" style=" color: black;font-weight: 600;font-size: 14px" href="#">Project Management</a>
+                        <a [routerLink]="['property']" routerLinkActive="active" class="nav-link" style=" color: black;font-weight: 600;font-size: 14px">Property Management</a>
                     </li>
 
                     <li *ngIf="IsLogin" class="nav-item">

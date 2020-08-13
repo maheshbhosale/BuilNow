@@ -11,6 +11,7 @@ import {CompanyModule} from './company/company.module';
 import { ToastrModule } from 'ngx-toastr';
 import { RegistrationComponent } from './auth/registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PropertyModule } from './property/property.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     CompanyModule,
     ToastrModule.forRoot(), // ToastrModule added
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PropertyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

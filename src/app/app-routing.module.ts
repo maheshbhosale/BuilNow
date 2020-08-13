@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path:'company',
     loadChildren:()=>import('./company/company.module').then(mod=>mod.CompanyModule)
+  },
+  {
+    path:'property',
+    loadChildren:()=>import('./property/property.module').then(mod=>mod.PropertyModule)
   }
 ];
 
