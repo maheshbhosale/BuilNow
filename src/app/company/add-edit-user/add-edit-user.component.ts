@@ -30,20 +30,9 @@ export class AddEditUserComponent implements OnInit {
     this.registerForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
-      company: ['', Validators.required],
+      branchName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      role: ['', Validators.required],
-      address: ['', Validators.required],
-      city: ['', Validators.required],
-      state: ['', Validators.required],
-      zipcode: ['', Validators.required],
-      country: ['', Validators.required],
-      telephone: ['', Validators.required],
-      fax: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmPassword: ['', Validators.required]
-    }, {
-      validator: MustMatch('password', 'confirmPassword')
+      roleofUser: ['', Validators.required]
     });
 
     if(this.isEditUser){
@@ -53,18 +42,9 @@ export class AddEditUserComponent implements OnInit {
       this.registerForm.setValue({
         firstName:user.firstName,
         lastName:user.lastName,
-        company: user.company,
-      email: user.email,
-      role: user.role,
-      address: "efjhkruh",
-      city: "kjdfh",
-      state: "sgerg",
-      zipcode: "w,ef",
-      country: "ekhfy",
-      telephone: "ehfje",
-      fax: "skflj",
-      password: "ewfhwe",
-      confirmPassword:"shfker"
+        branchName: user.branchName,
+        email: user.email,
+        roleofUser: user.roleofUser
       })
     }
   }
@@ -72,10 +52,16 @@ export class AddEditUserComponent implements OnInit {
   get f() { return this.registerForm.controls; }
   
   showNextPage() {
-    this.user=this.registerForm.value;
-    this.behaviourSubjectService.users.push(this.user);
-    this.toastr.success('User created successfully');
+    if(this.isEditUser){
+      this.toastr.success('User updated successfully');
     this.router.navigate(['/company']);
+    }
+    else{
+      this.user=this.registerForm.value;
+      this.behaviourSubjectService.users.push(this.user);
+      this.toastr.success('User created successfully');
+      this.router.navigate(['/company']);
+    }
   }
   
 }
