@@ -31,7 +31,9 @@ export class CompanyComponent implements OnInit {
     this.toastr.success('User removed successfully');
   }
 
-  editUserDetailById(id){
+  editUserDetailById(user: CompanyUser){
+    this.behaviourSubjectService.isEditUser = true;
+    this.behaviourSubjectService.selectedUserToEdit = user;
     this.router.navigate(['/add-new-user']);
   }
 }

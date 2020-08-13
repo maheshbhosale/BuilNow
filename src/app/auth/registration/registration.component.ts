@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { ValidatorService } from 'src/app/shared/services/validator.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registration',
@@ -16,7 +17,8 @@ export class RegistrationComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private validatorService: ValidatorService
+    private validatorService: ValidatorService,
+    private router: Router
     ) { 
       this.countries = [{id: 'USA', name: 'United States'}, {id: 'UK', name: 'United Kingdom'}, {id: 'FR', name: 'France'}];
         this.states = [{ id: "AL", name: "Alabama" }, { id: "AK", name: "Alaska" }, { id: "AZ", name: "Arizona" }, { id: "AR", name: "Arkansas" }];
@@ -46,6 +48,7 @@ export class RegistrationComponent implements OnInit {
   RegisterUser(){
 
     this.submitForm = true;
+    this.router.navigate(['/company']);
 
   }
 
