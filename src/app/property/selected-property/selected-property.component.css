@@ -1,6 +1,6 @@
 @media only screen and (min-width: 48em){
     .choose-subaru-header.row {
-       margin: 100px auto 0;
+       margin: 30px auto 0;
        justify-content: center;
        width: 95%;
    }
@@ -124,7 +124,7 @@
        text-transform: uppercase;
        text-align: center;
        flex-basis: 100%;
-       margin: 20px 0;
+       /* margin: 20px 0; */
    }
    @media only screen and (min-width: 48em){
        .choose-subaru-header div.view-by-links {
@@ -133,10 +133,9 @@
    }
    .choose-subaru-header .view-by-links {
        margin: auto;
-       border-top: 1px solid #dfdfdf;
-       border-bottom: 1px solid #dfdfdf;
-       padding: 15px 0;
-       letter-spacing: 1px;
+       
+        padding: 15px 0;
+       letter-spacing: 1px; 
    }
    .choose-subaru-header .view-by-container .view-by-label {
        color: #999;
@@ -148,7 +147,7 @@
    .choose-subaru-header .view-by-container .view-by-link {
        color: #333;
        padding: 2px;
-       font-weight: bolder;
+       font-weight: bold;
    }
    a {
        transition: color ease-out .2s;
