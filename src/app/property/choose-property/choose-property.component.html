@@ -43,6 +43,8 @@
     </div>
     
 </div>
+
+
 <div class="compare-background-wrap ng-scope ng-isolate-scope collision" ng-if="model"
     detect-collision=".entry-header-container">
     <div class="ng-modal compare-wrapper-modal OBK-compare-wrapper-modal ng-scope" style="display: none;">
@@ -69,8 +71,8 @@
                                 </div>
                             </div>
                             <div class="sub-header">
-                                <span class="arrow-icon fas fa-chevron-left prev desktop-arrow" data-direction="right"
-                                    (click)="plusSlides(-1)"></span>
+                                <!-- <span class="arrow-icon fas fa-chevron-left prev desktop-arrow" data-direction="right"
+                                    (click)="plusSlides(-1)"></span> -->
                                 <div class="labels-fixed">
                                     <div class="labels">
                                         <p class="options-title title-standard">
@@ -84,89 +86,282 @@
                                             Equipped</p>
                                     </div>
                                 </div>
+
+
                                 <div class="values-fixed-wrapper ">
-                                    <div class="pictures-values values-fixed">
-                                        <ul class="trim-pictures inner-table"
-                                            style="transform: translate3d(0px, 0px, 0px); user-select: none; cursor: move; touch-action: pan-y;">
-                                            <li class="trim-image trim-1" style="width: 216.333px;">
-                                                <a routerLink="/isometricone">
-                                                    <div class="image-wrapper image-OBK"
-                                                        style="background-image: url('../../assets/IsoMetrics.PNG');"
-                                                        role="img" aria-label="Subaru image - compare"></div>
-                                                </a>
-                                            </li>
-                                            <li class="trim-image trim-2" style="width: 216.333px;">
-                                                <a routerLink="/isometrictwo">
-                                                    <div class="image-wrapper image-OBK"
-                                                        style="background-image: url('../../assets/Isometric2.PNG');"
-                                                        role="img" aria-label="Subaru image - compare"></div>
-                                                </a>
-                                            </li>
-                                            <li class="trim-image trim-3" style="width: 216.333px;">
-                                                <a routerLink="/isometricthree">
-                                                    <div class="image-wrapper image-OBK"
-                                                        style="background-image: url('../../assets/Isometric3.PNG');"
-                                                        role="img" aria-label="Subaru image - compare"></div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="titles-values values-fixed">
+                                    <!-- carousal -->
+                                    <div style="margin-left: -3%;" id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel" data-interval="false">
+                                        <!-- <ol class="carousel-indicators">
+                                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol> -->
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                      
+                                              <div class="row">
+                                                  <div class="col">
+                                                      <a href="#">
+                                                          <img class="image-wrapper image-OBK" src="../../../assets/IsoMetrics.PNG" alt="Image" style="max-width:100%;">
+                                                      </a>
+
+                                                      <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                        <a routerLink="/isometricone">
+                                                            <span class="centerer"></span>
+                                                            <span class="centered">
+                                                                432 sqft<br>1 Bed,1 Bath,Porch
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <!-- <section class="parent-table">
+                                                        <ul class="labels">
+                                                            <li class="feature-name  nope" style="height: 24px;">
+                                                                <p class="feature-title">
+                                                                    <span class="centered">
+                                                                        <span class="feature-text">Starting Price*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </li>
+                                                            <li class="feature-name  nope" style="height: 24px;">
+                                                                <p class="feature-title">
+                                                                    <span class="centered">
+                                                                        <span class="feature-text">No of Floors</span>
+                                                                    </span>
+                                                                </p>
+                                                            </li>
+                                                            <li class="feature-name  nope" style="height: 24px;">
+                                                                <p class="feature-title">
+                                                                    <span class="centered">
+                                                                        <span class="feature-text">No of Bedrooms</span>
+                                                                    </span>
+                                                                </p>
+                                                            </li>
+                                                            <li class="feature-name  nope" style="height: 24px;">
+                                                                <p class="feature-title">
+                                                                    <span class="centered">
+                                                                        <span class="feature-text">No of Bathrooms</span>
+                                                                    </span>
+                                                                </p>
+                                                            </li>
+                                                            <li class="feature-name  nope" style="height: 24px;">
+                                                                <p class="feature-title">
+                                                                    <span class="centered">
+                                                                        <span class="feature-text">No of Garages</span>
+                                                                    </span>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                      
+                                                    </section> -->
+                                                    
+                                                  </div>
+                                                  <div class="col">
+                                                      <a href="#">
+                                                          <img  class="image-wrapper image-OBK" src="../../assets/Isometric2.PNG" alt="Image" style="max-width:100%;">
+                                                      </a>
+                                                      <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                        <a routerLink="/isometrictwo">
+                                                            <span class="centerer"></span>
+                                                            <span class="centered">
+                                                                <!--Hybrid exception on when-->
+                                                                540 sqft<br>1 Bed,1 Bath,Porch,Patio
+                                                                <!--End of Hybrid exception on when-->
+                                                            </span>
+                                                        </a>
+                                                      
+                                                    </li>
+
+                                                  </div>
+                                                  <div class="col">
+                                                      <a href="#">
+                                                          <img class="image-wrapper image-OBK" src="../../assets/Isometric3.PNG" alt="Image" style="max-width:100%;">
+                                                      </a>
+                                                      <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                        <a routerLink="/isometricthree">
+                                                            <span class="centerer"></span>
+                                                            <span class="centered">
+                                                                <!--Hybrid exception on when-->
+                                                                1,000 sqft<br>2 Bed,1 Bath,Porch,Patio
+                                                                <!--End of Hybrid exception on when-->
+                                                            </span>
+                                                        </a>
+                                                        <!--Hybrid exception-->
+                                                        <!--End of Hybrid exception-->
+                                                    </li>
+                                                  </div>
+                                                
+                                              </div>
+                                      
+                                            <!-- <img class="d-block w-100" src="../../../assets/IsoMetrics.PNG" alt="First slide"> -->
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img class="image-wrapper image-OBK" src="../../../assets/IsoMetrics.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometricone">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              432 sqft<br>1 Bed,1 Bath,Porch
+                                                          </span>
+                                                      </a>
+                                                  </li>
+                                                  
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img  class="image-wrapper image-OBK" src="../../assets/Isometric2.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometrictwo">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              <!--Hybrid exception on when-->
+                                                              540 sqft<br>1 Bed,1 Bath,Porch,Patio
+                                                              <!--End of Hybrid exception on when-->
+                                                          </span>
+                                                      </a>
+                                                      <!--Hybrid exception-->
+                                                      <!--End of Hybrid exception-->
+                                                  </li>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img class="image-wrapper image-OBK" src="../../assets/Isometric3.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometricthree">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              <!--Hybrid exception on when-->
+                                                              1,000 sqft<br>2 Bed,1 Bath,Porch,Patio
+                                                              <!--End of Hybrid exception on when-->
+                                                          </span>
+                                                      </a>
+                                                      <!--Hybrid exception-->
+                                                      <!--End of Hybrid exception-->
+                                                  </li>
+                                                </div>
+                                              
+                                            </div>
+                                             </div>
+                                          <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img class="image-wrapper image-OBK" src="../../../assets/IsoMetrics.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometricone">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              432 sqft<br>1 Bed,1 Bath,Porch
+                                                          </span>
+                                                      </a>
+                                                  </li>
+                                                  
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img  class="image-wrapper image-OBK" src="../../assets/Isometric2.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometrictwo">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              <!--Hybrid exception on when-->
+                                                              540 sqft<br>1 Bed,1 Bath,Porch,Patio
+                                                              <!--End of Hybrid exception on when-->
+                                                          </span>
+                                                      </a>
+                                                      <!--Hybrid exception-->
+                                                      <!--End of Hybrid exception-->
+                                                  </li>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#">
+                                                        <img class="image-wrapper image-OBK" src="../../assets/Isometric3.PNG" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                    <li class="trim-title " style="width: 191.333px;list-style-type: none;">
+                                                      <a routerLink="/isometricthree">
+                                                          <span class="centerer"></span>
+                                                          <span class="centered">
+                                                              <!--Hybrid exception on when-->
+                                                              1,000 sqft<br>2 Bed,1 Bath,Porch,Patio
+                                                              <!--End of Hybrid exception on when-->
+                                                          </span>
+                                                      </a>
+                                                      <!--Hybrid exception-->
+                                                      <!--End of Hybrid exception-->
+                                                  </li>
+                                                </div>
+                                              
+                                            </div>
+                                              </div>
+                                        </div>
+                                      
+                                        
+                                        
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                          <span style="margin-right: 30%;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                          <span style="margin-left: 70%;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </div>
+
+                        
+                                    <!-- <div class="titles-values values-fixed">
                                         <ul class="trim-titles inner-table"
                                             style="transform: translate3d(0px, 0px, 0px); user-select: none; cursor: move; touch-action: pan-y;">
-                                            <!--Hybrid exception-->
-                                            <!--End of Hybrid exception-->
+                                          
                                             <li class="trim-title " style="width: 191.333px;list-style-type: none;">
                                                 <a routerLink="/isometricone">
                                                     <span class="centerer"></span>
                                                     <span class="centered">
-                                                        <!--Hybrid exception on when-->
                                                         432 sqft<br>1 Bed,1 Bath,Porch
-                                                        <!--End of Hybrid exception on when-->
                                                     </span>
                                                 </a>
-                                                <!--Hybrid exception-->
-                                                <!--End of Hybrid exception-->
                                             </li>
-                                            <!--Hybrid exception-->
-                                            <!--End of Hybrid exception-->
                                             <li class="trim-title " style="width: 191.333px;list-style-type: none;">
                                                 <a routerLink="/isometrictwo">
                                                     <span class="centerer"></span>
                                                     <span class="centered">
-                                                        <!--Hybrid exception on when-->
                                                         540 sqft<br>1 Bed,1 Bath,Porch,Patio
-                                                        <!--End of Hybrid exception on when-->
                                                     </span>
                                                 </a>
-                                                <!--Hybrid exception-->
-                                                <!--End of Hybrid exception-->
                                             </li>
-                                            <!--Hybrid exception-->
-                                            <!--End of Hybrid exception-->
                                             <li class="trim-title " style="width: 191.333px;list-style-type: none;">
                                                 <a routerLink="/isometricthree">
                                                     <span class="centerer"></span>
                                                     <span class="centered">
-                                                        <!--Hybrid exception on when-->
                                                         1,000 sqft<br>2 Bed,1 Bath,Porch,Patio
-                                                        <!--End of Hybrid exception on when-->
                                                     </span>
                                                 </a>
-                                                <!--Hybrid exception-->
-                                                <!--End of Hybrid exception-->
                                             </li>
-                                            <!--Hybrid exception-->
-                                            <!--End of Hybrid exception-->
                                         </ul>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
-                                <span class="arrow-icon fas fa-chevron-right next desktop-arrow" data-direction="left"
-                                    (click)="plusSlides(1)"></span>
+                                
+
+
+                                
+                                
+
+                                <!-- <span class="arrow-icon fas fa-chevron-right next desktop-arrow" data-direction="left"
+                                    (click)="plusSlides(1)"></span> -->
                             </div>
                         </header>
                     </div>
-                    <section class="parent-table  ">
+                    <section class="parent-table">
                         <ul class="labels">
                             <li class="feature-name  nope" style="height: 24px;">
                                 <p class="feature-title">
