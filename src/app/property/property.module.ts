@@ -8,7 +8,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectedPropertyComponent } from './selected-property/selected-property.component';
 import {ChoosePropertyComponent} from './choose-property/choose-property.component';
 import {PropertyListComponent} from './property-list/property-list.component';
-import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { SharedModule } from '../shared/shared.module';
     PropertyRoutingModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule,
-    SharedModule
+    ReactiveFormsModule
   ],
   exports:[
     
