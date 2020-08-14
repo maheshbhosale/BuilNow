@@ -1404,5 +1404,5 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
 .line {
     height: 2px;
     width: auto;
-    background-color: ;
+    /* background-color: linen; */
 }
