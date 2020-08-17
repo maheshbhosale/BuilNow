@@ -1,4 +1,4 @@
-/* #title {
+#title {
     padding: 0;
     font-size: 14px;
 }
@@ -37,10 +37,10 @@
     margin-top: 0;
     margin-bottom: 0;
     max-width: 60rem;
-} */
+} 
 
 
-/* .row:before,
+.row:before,
 .row:after {
     content: " ";
     display: table;
@@ -104,10 +104,10 @@
     font-family: Helvetica, Arial, sans-serif;
     font-style: normal;
     text-rendering: optimizeLegibility;
-} */
+} 
 
 
-/* h2 {
+ h2 {
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -217,10 +217,10 @@ hr {
         display: inline-block;
         color: #09F;
     }
-} */
+} 
 
 
-/* .compare-page-header .btn-change-subaru [class^="fas-"] {
+.compare-page-header .btn-change-subaru [class^="fas-"] {
     color: #09F;
 }
 
@@ -431,10 +431,10 @@ header {
         padding-bottom: 35px;
         border-bottom: 2px solid #ccc;
     }
-} */
+} 
 
 
-/* 
+ 
 .compare-wrapper .compare-main-title {
     color: #333;
     text-align: center;
@@ -626,14 +626,14 @@ h3 {
     .compare-wrapper .labels-fixed {
         position: relative;
     }
-} */
+} 
 
 .compare-wrapper .labels-fixed {
     float: left;
 }
 
 
-/* .compare-wrapper .labels-fixed {
+ .compare-wrapper .labels-fixed {
     background: #efefef;
 }
 
@@ -694,10 +694,10 @@ h3 {
     .compare-wrapper-modal .top-stick .options-title {
         font-size: 13px;
     }
-} */
+} 
 
 
-/* .compare-wrapper .labels-fixed .options-title {
+ .compare-wrapper .labels-fixed .options-title {
     font-weight: normal;
 }
 
@@ -795,10 +795,10 @@ p {
     color: #333;
     content: "\e91c";
     cursor: default;
-} */
+} 
 
 
-/* 
+ 
 .compare-wrapper .fas .fa-minus:before {
     color: #333;
     content: "\e91a";
@@ -1015,10 +1015,10 @@ li {
     .compare-wrapper .trim-titles {
         list-style: none;
     }
-} */
+} 
 
 
-/* 
+ 
 @media only screen and (min-width: 768px) {
     .compare-wrapper .trim-title a {
         padding-top: 15px;
@@ -1317,7 +1317,7 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%240D1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-} */
+}
 
 .topbar {
     background-color: #80d4ff;
@@ -1338,7 +1338,7 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
         color: white;
         font-size: 18px;
         margin-left: -3%;
-        /* padding-top: -0.5%; */
+         padding-top: -0.5%; 
     }
 }
 
@@ -1347,7 +1347,7 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
         background-color: #80d4ff;
         padding: 0;
         height: 26px;
-        /* margin-top: -33px; */
+         margin-top: -33px; 
     }
 }
 
@@ -1404,5 +1404,10 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
 .line {
     height: 2px;
     width: auto;
-    /* background-color: linen; */
+     background-color: linen; 
 }
+
+
+
+
+
