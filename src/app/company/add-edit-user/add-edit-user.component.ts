@@ -18,6 +18,7 @@ export class AddEditUserComponent implements OnInit {
   user: CompanyUser;
   isEditUser:boolean;
   title: string = "Create New User";
+  title1: string = "User Details";
   button:string = "Create";
 
   constructor(private fb: FormBuilder, private router: Router,
