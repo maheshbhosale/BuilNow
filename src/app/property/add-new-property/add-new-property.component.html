@@ -1,192 +1,198 @@
-<div class="row">
-    <div class="col Head">Register</div>
-    <div class="line1"></div>
-    <div class="col Head">Registration Details</div>
-</div>
-<div class="line">
-
-</div>
-<div class="row">
-
-    <!-- First half -->
-    <div class="col">
-        <form [formGroup]="registerForm">
-            <div style="margin-top: 20px;">
-                <div style="margin-bottom: 20px;" class="row">
-                    <div class="col-md-5">
-                        Are You Registering As
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline col-md-3">
-                        <input type="radio" (click)="setradio(1)" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Individual</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline col-md-3">
-                        <input type="radio" (click)="setradio(2)" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Company</label>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputFirstname ">Firstname</label>
-                        <input formControlName="firstname" type="text " class="form-control" id="inputFirstname" placeholder="Firstname" required>
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['firstname'].valid && (registerForm.controls['firstname']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['firstname']?.errors.required ">
-                                Please enter a firstname
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputLastname ">Lastname</label>
-                        <input formControlName="lastname" type="text " class="form-control " id="inputLastname" placeholder="Lastname">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['lastname'].valid && (registerForm.controls['lastname']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['lastname']?.errors.required ">
-                                Please enter a lastname
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row ">
-
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Company Name</label>
-                        <input [disabled]="Isdisabled" formControlName="companyname" type="text " class="form-control " id="inputCompnay " placeholder="Company name ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['companyname'].valid && (registerForm.controls['companyname']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['companyname']?.errors.required ">
-                                Please enter a company name
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputEmail4 ">Email</label>
-                        <input formControlName="email" type="email " class="form-control " id="inputEmail4 " placeholder="Email ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['email'].valid && (registerForm.controls['email']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['email']?.errors.required ">
-                                Please enter a Email
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group ">
-                    <label for="inputAddress ">Address</label>
-                    <input formControlName="address" type="text " class="form-control " id="inputAddress " placeholder="1234 Main St ">
-                    <input style="margin-top: 10px;" type="text " class="form-control " id="inputAddress2 " placeholder="Apartment, studio, or floor ">
-                    <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['address'].valid && (registerForm.controls['address']?.touched || submitForm)">
-                        <div *ngIf="registerForm.controls['address']?.errors.required ">
-                            Please enter a Address
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputCity ">City</label>
-                        <input formControlName="city" type="text " class="form-control " id="inputCity ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['city'].valid && (registerForm.controls['city']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['city']?.errors.required ">
-                                Please enter a city
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-6 ">
-                        <label for="inputCity ">State</label>
-                        <input formControlName="state" type="text " class="form-control " id="inputState ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['state'].valid && (registerForm.controls['state']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['state']?.errors.required ">
-                                Please enter a state
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group col-md-6 ">
-                        <label for="inputState ">State</label>
-                        <select id="inputState " class="form-control ">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div> -->
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputZip ">Zip Code</label>
-                        <input formControlName="zipcode" type="text " class="form-control " id="inputZip ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['zipcode'].valid && (registerForm.controls['zipcode']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['zipcode']?.errors.required ">
-                                Please enter a zip code
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputCountry ">Country</label>
-                        <input formControlName="country" type="text " class="form-control " id="inputCountry ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['country'].valid && (registerForm.controls['country']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['country']?.errors.required ">
-                                Please enter a country
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputTelephone ">Telephone</label>
-                        <input formControlName="telephone" type="text " class="form-control " id="inputTelephone ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['telephone'].valid && (registerForm.controls['telephone']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['telephone']?.errors.required ">
-                                Please enter telephone
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputFax ">Fax</label>
-                        <input formControlName="fax" type="text " class="form-control " id="inputFax ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['fax'].valid && (registerForm.controls['fax']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['fax']?.errors.required ">
-                                Please enter telephone
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputPassword4 ">Password</label>
-                        <input formControlName="password" type="password " class="form-control " id="inputPassword4 " placeholder="Password ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['password'].valid && (registerForm.controls['password']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['password']?.errors.required ">
-                                Please enter password
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputCity ">Confirm Password</label>
-                        <input formControlName="confirmpassword" type="password " class="form-control " id="confirmPassword " placeholder="Confirm Password ">
-                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;" *ngIf="!registerForm.controls['confirmpassword'].valid && (registerForm.controls['confirmpassword']?.touched || submitForm)">
-                            <div *ngIf="registerForm.controls['confirmpassword']?.errors.required ">
-                                Please enter confirm password
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary " (click)="RegisterUser()">Sign in</button>
-            </div>
-        </form>
+<div class="container">
+    <div class="row">
+        <div class="col Head">{{title}}</div>
+        <div class="line1"></div>
+        <div class="col Head">Property Details</div>
     </div>
-    <div class="line1">
+    <div class="line">
 
     </div>
-    <!-- Second Half -->
-    <div class="col">
-        <div style="font-size: 14px;">
+    <div class="row">
 
-            <b><div>Dear,</div> 
-                <div style="margin-left: 35px;">Mr. john Smith,<br><span style="color: blue;">johnSmith@gmail.com</span>,<br>ABC Company,<br>Address1<br>Address<br>Reston,Varginia,United States<br>20190<br>Telephone +1 (703)481 2100 <br>Fax +1 (703)481 2100
-                </div> 
-            </b>
+        <!-- First half -->
+        <div class="col">
+            <form [formGroup]="propertyForm">
+                <div style="margin-top: 20px;">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputzipCode ">Zip Code</label>
+                            <input formControlName="zipCode" type="text " class="form-control" id="inputzipCode"
+                                placeholder="zipCode" required>
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['zipCode'].valid && (propertyForm.controls['zipCode']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['zipCode']?.errors.required ">
+                                    Please enter a zipCode
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputlocation ">Location</label>
+                            <input formControlName="location" type="text " class="form-control " id="inputlocation"
+                                placeholder="location">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['location'].valid && (propertyForm.controls['location']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['location']?.errors.required ">
+                                    Please enter a location
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input [disabled]="Isdisabled" formControlName="city" type="text " class="form-control "
+                                id="inputCity " placeholder="Company name ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['city'].valid && (propertyForm.controls['city']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['city']?.errors.required ">
+                                    Please enter a city
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputState ">State</label>
+                            <input formControlName="state" type="state " class="form-control " id="inputState "
+                                placeholder="State ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['state'].valid && (propertyForm.controls['state']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['state']?.errors.required ">
+                                    Please enter a State
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputAddress ">Address</label>
+                        <input formControlName="address" type="text " class="form-control " id="inputAddress "
+                            placeholder="1234 Main St ">
+                        <input style="margin-top: 10px;" type="text " class="form-control " id="inputAddress2 "
+                            placeholder="Apartment, studio, or floor ">
+                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                            *ngIf="!propertyForm.controls['address'].valid && (propertyForm.controls['address']?.touched || submitForm)">
+                            <div *ngIf="propertyForm.controls['address']?.errors.required ">
+                                Please enter a Address
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTelephone1">Telephone</label>
+                            <input formControlName="telephone1" type="text " class="form-control " id="inputTelephone1">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['telephone1'].valid && (propertyForm.controls['telephone1']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['telephone1']?.errors.required ">
+                                    Please enter telephone
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTelephone2">&nbsp; </label>
+                            <input formControlName="telephone1" type="text " class="form-control "
+                                id="inputTelephone2 ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['telephone2'].valid && (propertyForm.controls['telephone2']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['telephone2']?.errors.required ">
+                                    Please enter telephone
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTax ">Tax Map No</label>
+                            <input type="text " class="form-control " id="inputTax" placeholder="Tax Map No"
+                                formControlName="tax"
+                                [ngClass]="{ 'is-invalid': submitted && f.tax.errors }" />
+                            <div *ngIf="submitted && f.tax.errors" class="invalid-feedback">
+                                <div *ngIf="f.tax.errors.required">Tax Map No is required</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Current Status of Property</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="status" class="form-control ">
+                                <option>Undeveloped lot</option>
+                                <option>Developed lot</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Site Topography</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="topology" class="form-control ">
+                                <option>Regular Site</option>
+                                <option>Normal Site</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Is there existing building on site</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="isBuildingExists" class="form-control ">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Existing building area in sqft.</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <input formControlName="buildingArea" type="text " class="form-control " id="inputBuildingArea">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['buildingArea'].valid && (propertyForm.controls['buildingArea']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['buildingArea']?.errors.required ">
+                                    Please enter existing building
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="line1">
 
         </div>
-    </div>
+        <!-- Second Half -->
+        <div class="col">
+            <div style="font-size: 14px;">
 
+                <b>
+                    <div>Dear,</div>
+                    <div style="margin-left: 35px;">Mr. john Smith,<br>
+                        <span>Project location registered as below</span>,<br>,<br>Address1<br>Address<br>Reston,Varginia,United States<br>20190<br>Telephone +1
+                        (703)481 2100 <br>Fax +1 (703)481 2100
+                    </div>
+                </b>
+
+            </div>
+
+            <button type="submit " class="btn btn-primary " style="float: right;margin-top: 400px;"
+                (click)="showNextPage()">{{button}}</button>
+        </div>
+
+    </div>
 </div>

@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { ValidatorService } from 'src/app/shared/services/validator.service';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { BehavioursubService } from 'src/app/shared/services/behavioursub.service';
+import { Property } from '../property.model';
 
 @Component({
   selector: 'app-add-new-property',
@@ -7,9 +13,69 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddNewPropertyComponent implements OnInit {
 
-  constructor() { }
+  propertyForm: FormGroup;
+  submitForm = false;
+  button: string = "Add Property";
+  isEditProperty: boolean;
+  title = "Add New Property to your account";
+  property: Property;
+
+  constructor(private formBuilder: FormBuilder,
+    private validatorService: ValidatorService,
+    private router: Router, private readonly toastr: ToastrService,
+    private readonly behaviourSubjectService: BehavioursubService) {
+    this.isEditProperty = this.behaviourSubjectService.isEditProperty;
+  }
 
   ngOnInit() {
+    this.propertyForm = this.formBuilder.group({
+      zipCode: new FormControl('', [Validators.required]),
+      location: new FormControl('', [Validators.required]),
+      address: new FormControl('', [Validators.required]),
+      city: new FormControl('', [Validators.required]),
+      state: new FormControl('', [Validators.required]),
+      telephone1: new FormControl('', [Validators.required]),
+      telephone2: new FormControl('', [Validators.required]),
+      tax: new FormControl('', [Validators.required]),
+      status: new FormControl('', [Validators.required]),
+      topology: new FormControl('', [Validators.required]),
+      isBuildingExists: new FormControl('', [Validators.required]),
+      buildingArea: new FormControl('', [Validators.required]),
+    });
+    if (this.isEditProperty) {
+      this.title = "Update Selected Property to your account";
+      this.button = "Update";
+      const property = this.behaviourSubjectService.seletedPropertyToEdit;
+      this.propertyForm.setValue({
+        zipCode: property.zipCode,
+        location: property.location,
+        address: property.address,
+        city: property.city,
+        state: property.state,
+        telephone1: property.telephone1,
+        telephone2: property.telephone2,
+        tax: property.tax,
+        status: property.status,
+        topology: property.topology,
+        isBuildingExists: property.isBuildingExists,
+        buildingArea: property.buildingArea
+      })
+    }
+  }
+
+
+  showNextPage() {
+    this.submitForm = true;
+    if (this.isEditProperty) {
+      this.toastr.success('Property updated successfully');
+      this.router.navigate(['/property']);
+    }
+    else {
+      this.property = this.propertyForm.value;
+      this.behaviourSubjectService.properties.push(this.property);
+      this.toastr.success('Property created successfully');
+      this.router.navigate(['/property']);
+    }
   }
 
 }

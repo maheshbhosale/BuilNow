@@ -1,13 +1,12 @@
 .line {
-  width: auto;
-  background-color: #dee2e6;
-  height: 2px;
+  border-right: 2px solid #dee2e6;
 }
 
-.line1 {
-  width: 2px;
-  background-color: #dee2e6;
-  height: auto;
+@media only screen and (max-width: 48em){
+  .line {
+      border-bottom: 2px solid #dee2e6;
+      margin-bottom: 10px;
+    }
 }
 
 .Head {

@@ -48,7 +48,7 @@ export class RegistrationComponent implements OnInit {
   RegisterUser(){
 
     this.submitForm = true;
-    this.router.navigate(['/company']);
+    this.router.navigate(['/login']);
 
   }
 

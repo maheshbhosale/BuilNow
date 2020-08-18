@@ -1,94 +1,102 @@
-<div class="row">
-    <div class="col Head">{{title}}</div>
-    <div class="line1"></div>
-    <div class="col Head">User Details</div>
-</div>
-<div class="line">
-
-</div>
-<div class="row">
-
-    <!-- First half -->
-    <div class="col col-xs-12">
-        <form [formGroup]="registerForm">
-            <div style="margin-top: 20px;">
-
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputFirstname ">First Name</label>
-                        <input type="text " class="form-control " id="inputFirstname" placeholder="First Name"
-                            formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
-                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-                            <div *ngIf="f.firstName.errors.required">First Name is required</div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputLastname ">Last Name</label>
-                        <input type="text " class="form-control " id="inputLastname" placeholder="Last Name"
-                            formControlName="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
-                        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
-                            <div *ngIf="f.lastName.errors.required">Last Name is required</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row ">
-
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4 ">Branch Name</label>
-                        <input type="text " class="form-control " id="inputCompnay " placeholder="Branch name "
-                            formControlName="branchName" [ngClass]="{ 'is-invalid': submitted && f.branchName.errors }" />
-                        <div *ngIf="submitted && f.branchName.errors" class="invalid-feedback">
-                            <div *ngIf="f.branchName.errors.required">Branch Name is required</div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 ">
-                        <label for="inputEmail4 ">Email Address</label>
-                        <input type="email " class="form-control " id="inputEmail4 " placeholder="Email "
-                            formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                            <div *ngIf="f.email.errors.required">Email is required</div>
-                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="form-row">
-                    <div class="form-group col-md-6 ">
-                        <label for="inputCity ">Role of User</label>
-                        <input type="text " class="form-control " id="inputCity " placeholder="Role of User"
-                            formControlName="roleofUser" [ngClass]="{ 'is-invalid': submitted && f.roleofUser.errors }" />
-                        <div *ngIf="submitted && f.roleofUser.errors" class="invalid-feedback">
-                            <div *ngIf="f.roleofUser.errors.required">Role of user is required</div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- <button type="submit " class="btn btn-primary ">Create</button> -->
-            </div>
-        </form>
+<div class="container">
+    <!-- <div class="row">
+        <div class="col Head">{{title}}</div>
+        <div class="line1"></div>
+        <div class="col Head">User Details</div>
     </div>
-    <div class="line1" style="height: 680px;">
+    <div class="line">
 
-    </div>
-    <!-- Second Half -->
-    <div class="col col-xs-12">
-        <div style="font-size: 14px;">
+    </div> -->
+    <div class="row">
 
-            <b>
-                <div>Dear,</div>
-                <div style="margin-left: 35px;">{{f.firstName.value}}  {{f.lastName.value}}<br>{{f.branchName.value}}<br><span
-                        style="color: blue;"> {{f.email.value}}</span><br>{{f.roleofUser.value}}<br>
+        <!-- First half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title}}</p>
+            <form [formGroup]="registerForm">
+                <div style="margin-top: 20px;">
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputFirstname ">First Name</label>
+                            <input type="text " class="form-control " id="inputFirstname" placeholder="First Name"
+                                formControlName="firstName"
+                                [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputLastname ">Last Name</label>
+                            <input type="text " class="form-control " id="inputLastname" placeholder="Last Name"
+                                formControlName="lastName"
+                                [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4 ">Branch Name</label>
+                            <input type="text " class="form-control " id="inputCompnay " placeholder="Branch name "
+                                formControlName="branchName"
+                                [ngClass]="{ 'is-invalid': submitted && f.branchName.errors }" />
+                            <div *ngIf="submitted && f.branchName.errors" class="invalid-feedback">
+                                <div *ngIf="f.branchName.errors.required">Branch Name is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputEmail4 ">Email Address</label>
+                            <input type="email " class="form-control " id="inputEmail4 " placeholder="Email "
+                                formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">Email is required</div>
+                                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputCity ">Role of User</label>
+                            <input type="text " class="form-control " id="inputCity " placeholder="Role of User"
+                                formControlName="roleofUser"
+                                [ngClass]="{ 'is-invalid': submitted && f.roleofUser.errors }" />
+                            <div *ngIf="submitted && f.roleofUser.errors" class="invalid-feedback">
+                                <div *ngIf="f.roleofUser.errors.required">Role of user is required</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- <button type="submit " class="btn btn-primary ">Create</button> -->
                 </div>
-            </b>
-
+            </form>
         </div>
-        <button type="submit " class="btn btn-primary " style="float: right;margin-top: 400px;" (click)="showNextPage()">{{button}}</button>
-    </div>
+       
+        <!-- Second Half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title1}}</p>
+            <div style="font-size: 14px;">
 
+                <b>
+                    <div>Dear,</div>
+                    <div style="margin-left: 35px;">{{f.firstName.value}}
+                        {{f.lastName.value}}<br>{{f.branchName.value}}<br><span style="color: blue;">
+                            {{f.email.value}}</span><br>{{f.roleofUser.value}}<br>
+                    </div>
+                </b>
+
+            </div>
+            <button type="submit " class="btn btn-primary " style="float: right;margin-top: 330px;margin-bottom: 10px;"
+                (click)="showNextPage()">{{button}}</button>
+        </div>
+
+    </div>
 </div>

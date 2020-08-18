@@ -6,7 +6,7 @@ export class Property{
     state: string;
     telephone1: number;
     telephone2: number;
-    fax: number;
+    tax: number;
     status:string;
     topology:string;
     isBuildingExists:boolean;
