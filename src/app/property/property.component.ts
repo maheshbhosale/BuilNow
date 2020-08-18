@@ -10,29 +10,35 @@ import { Property } from './property.model';
 })
 export class PropertyComponent implements OnInit {
 
-  properties : Property[] = [];
+  properties: Property[] = [];
+  selectedUser: string;
 
-  constructor(private readonly behaviourSubjectService:BehavioursubService,
-    private readonly router:Router, private toastr: ToastrService) { 
-    
+  constructor(private readonly behaviourSubjectService: BehavioursubService,
+    private readonly router: Router, private toastr: ToastrService) {
+
   }
 
   ngOnInit(): void {
+    this.selectedUser = localStorage.getItem("Name");
     this.getPropertyDetails();
-  }  
-
-  getPropertyDetails(){    
-    this.properties=this.behaviourSubjectService.properties;
   }
 
-  removePropertyDetails(index){
-    this.properties.splice(index,1);
+  getPropertyDetails() {
+    this.properties = this.behaviourSubjectService.properties;
+  }
+
+  removePropertyDetails(index) {
+    this.properties.splice(index, 1);
     this.toastr.success('Property removed successfully');
   }
 
-  editPropertyDetailById(property: Property){
+  editPropertyDetailById(property: Property) {
     this.behaviourSubjectService.isEditProperty = true;
     this.behaviourSubjectService.seletedPropertyToEdit = property;
     this.router.navigate(['/add-new-property']);
+  }
+
+  addNewProperty() {
+    this.behaviourSubjectService.isEditProperty = false;
   }
 }

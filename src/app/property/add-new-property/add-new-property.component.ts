@@ -31,7 +31,8 @@ export class AddNewPropertyComponent implements OnInit {
     this.propertyForm = this.formBuilder.group({
       zipCode: new FormControl('', [Validators.required]),
       location: new FormControl('', [Validators.required]),
-      address: new FormControl('', [Validators.required]),
+      address1: new FormControl('', [Validators.required]),
+      address2: new FormControl('', [Validators.required]),
       city: new FormControl('', [Validators.required]),
       state: new FormControl('', [Validators.required]),
       telephone1: new FormControl('', [Validators.required]),
@@ -49,7 +50,8 @@ export class AddNewPropertyComponent implements OnInit {
       this.propertyForm.setValue({
         zipCode: property.zipCode,
         location: property.location,
-        address: property.address,
+        address1: property.address1,
+        address2: property.address2,
         city: property.city,
         state: property.state,
         telephone1: property.telephone1,
@@ -63,6 +65,8 @@ export class AddNewPropertyComponent implements OnInit {
     }
   }
 
+  // convenience getter for easy access to form fields
+  get f() { return this.propertyForm.controls; }
 
   showNextPage() {
     this.submitForm = true;
