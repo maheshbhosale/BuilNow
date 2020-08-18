@@ -641,7 +641,7 @@ h3 {
 @media only screen and (min-width: 768px) {
     .compare-wrapper .top-stick .labels-fixed .labels {
         padding: 0;
-        width: 300px;
+        width: 190px;
     }
 }
 
@@ -716,7 +716,7 @@ h3 {
 }
 
 .compare-wrapper .labels-fixed .options-title {
-    margin: 18px 0px 4px 12px;
+    margin: 18px 0px 4px 40px;
     line-height: 1em;
 }
 
@@ -1071,7 +1071,7 @@ section {
 @media only screen and (min-width: 768px) {
     .compare-wrapper .feature-name {
         width: 262px;
-        padding: 16px 11px 15px 26px;
+        padding: 16px 11px 15px 00px;
     }
 }
 
@@ -1394,4 +1394,20 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
     height: 2px;
     width: auto;
     background-color: linen;
+}
+
+.inputBox {
+    height: 20px;
+    width: 80px;
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.filter-col {
+    padding-left: 10px;
+    padding-right: 10px;
 }
