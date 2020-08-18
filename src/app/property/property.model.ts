@@ -1,7 +1,8 @@
 export class Property{
     zipCode:number;
     location: string;
-    address: string;
+    address1:string;
+    address2:string;
     city: string;
     state: string;
     telephone1: number;

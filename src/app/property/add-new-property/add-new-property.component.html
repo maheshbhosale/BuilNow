@@ -65,13 +65,13 @@
                     </div>
                     <div class="form-group ">
                         <label for="inputAddress ">Address</label>
-                        <input formControlName="address" type="text " class="form-control " id="inputAddress "
+                        <input formControlName="address1" type="text " class="form-control " id="inputAddress "
                             placeholder="1234 Main St ">
-                        <input style="margin-top: 10px;" type="text " class="form-control " id="inputAddress2 "
+                        <input formControlName="address2" style="margin-top: 10px;" type="text " class="form-control " id="inputAddress2 "
                             placeholder="Apartment, studio, or floor ">
                         <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
-                            *ngIf="!propertyForm.controls['address'].valid && (propertyForm.controls['address']?.touched || submitForm)">
-                            <div *ngIf="propertyForm.controls['address']?.errors.required ">
+                            *ngIf="!propertyForm.controls['address1'].valid && (propertyForm.controls['address1']?.touched || submitForm)">
+                            <div *ngIf="propertyForm.controls['address1']?.errors.required ">
                                 Please enter a Address
                             </div>
                         </div>
@@ -183,8 +183,11 @@
                 <b>
                     <div>Dear,</div>
                     <div style="margin-left: 35px;">Mr. john Smith,<br>
-                        <span>Project location registered as below</span>,<br>,<br>Address1<br>Address<br>Reston,Varginia,United States<br>20190<br>Telephone +1
-                        (703)481 2100 <br>Fax +1 (703)481 2100
+                        <span>Project location registered as below</span>,<br>{{f.address1.value}}<br>{{f.address2.value}}<br>{{f.zipCode.value}}<br>{{f.location.value}}<br>{{f.city.value}}<br>{{f.state.value}}<br>Telephone 
+                        {{f.telephone1.value}} {{f.telephone2.value}}<br>Tax Map No {{f.tax.value}}<br><br>
+                        <span>Current Status    {{f.status.value}}</span><br>
+                        <span>Site Topography    {{f.topology.value}}</span><br>
+                        <span>Existing Building Area   {{f.buildingArea.value}} sqft.</span><br>
                     </div>
                 </b>
 
