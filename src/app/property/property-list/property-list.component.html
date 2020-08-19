@@ -1,0 +1,507 @@
+<div class="choose-subaru-header row">
+    <h2 class="title">Choose a <span>Industry</span></h2>
+    <div class="view-by-container">
+        <div class="view-by-links">
+            <span class="view-by-label">View By:</span>
+            <a class="view-by-link disabled">industry</a>
+            <a target="_self" class="view-by-link selected">product</a>
+        </div>
+    </div>
+    <div class="hide-for-large-up text-toggle">
+        <button ng-click="toggleYears()" style="outline: none;"><span ng-bind="yearToggleText">Previous</span> Year</button>
+    </div>
+
+</div>
+<div class="vehicle-cards-container">
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Residential.jpg" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="columns left">
+                        <h3 class="model-name">
+                            <span class="year">Residential</span>
+                            <span class="model"></span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Single Family Detached</li>
+                                <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Town Homes</li>
+                                <li class="highlight">Multy Family</li>
+                                <li class="highlight">Outdoor Structures</li>
+                                <li class="highlight">Labor Accomodation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button routerLink="/selected-property" class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/commercial.PNG" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Commercial</span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Offices</li>
+                                <li class="highlight">Retail</li>
+                                <li class="highlight">Shopping Centers</li>
+                                <li class="highlight">Warehouses</li>
+                                <li class="highlight">Distribution Centers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Hospital.JPG" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Hospitality</span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Hotels</li>
+                                <!-- <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Townhouses</li>
+                                <li class="highlight">Multy Family</li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/University.jpg" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Education</span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">High Schools</li>
+                                <li class="highlight">Kindergartens</li>
+                                <li class="highlight">Primary Schools</li>
+                                <li class="highlight">University</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Retaining Wall.jpg" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Site Work</span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Retaining Walls</li>
+                                <li class="highlight">Sewers</li>
+                                <li class="highlight">Storm Drains</li>
+                                <li class="highlight">Roads</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Parking Structures.JPG" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Parking Structure</span>
+                        </h3>
+                    </div>
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Parking Garage</li>
+                                <!-- <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Townhouses</li>
+                                <li class="highlight">Multy Family</li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Hospital.JPG" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">Hospital</span>
+                        </h3>
+                    </div>
+
+                    <!-- <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Hospital</li>
+                                <!-- <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Townhouses</li>
+                                <li class="highlight">Multy Family</li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/custom.PNG" style="width: 100%;height: 302px;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="small-6 columns left">
+                        <h3 class="model-name">
+                            <span class="year">CUSTOM</span>
+                        </h3>
+                    </div>
+
+                    <div class="right">
+                        <div class="basic-info">
+                            <div class="msrp">
+                                <span class="text-label">Starting At</span>
+                                <span class="price">$18,695</span><span class="asterick">*</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Single Family Detached</li>
+                                <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Townhouses</li>
+                                <li class="highlight">Multy Family</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

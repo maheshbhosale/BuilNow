@@ -1,0 +1,17 @@
+.line {
+  width: auto;
+  background-color: #dee2e6;
+  height: 2px;
+}
+
+.line1 {
+  width: 2px;
+  background-color: #dee2e6;
+  height: auto;
+}
+
+.Head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
