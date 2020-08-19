@@ -1,0 +1,12 @@
+[
+    {
+        "currentZoning": "Residential",
+        "maxArea": "1560 sqft",
+        "buildingCode": "IBC 2020",
+        "snowLoads": "20 psf",
+        "frostDepth": "24",
+        "windSpeed": "115 mph",
+        "seismicCoefficient": "ss 0.167 S1 0.067",
+        "soilTypes": "D"
+    }
+]

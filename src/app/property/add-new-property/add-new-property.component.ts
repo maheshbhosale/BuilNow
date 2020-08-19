@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { BehavioursubService } from 'src/app/shared/services/behavioursub.service';
 import { Property } from '../property.model';
+import * as data from '../Json/add-property.json';
+import * as data1 from '../Json/project.json';
 
 @Component({
   selector: 'app-add-new-property',
@@ -28,6 +30,8 @@ export class AddNewPropertyComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log((data as any ).default);
+    console.log((data1 as any ).default);
     this.propertyForm = this.formBuilder.group({
       zipCode: new FormControl('', [Validators.required]),
       location: new FormControl('', [Validators.required]),
