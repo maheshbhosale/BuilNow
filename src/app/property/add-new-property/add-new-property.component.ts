@@ -20,7 +20,9 @@ export class AddNewPropertyComponent implements OnInit {
   button: string = "Add Property";
   isEditProperty: boolean;
   title = "Add New Property to your account";
+  title1 = "Property Details";
   property: Property;
+  selectedUser: string;
 
   constructor(private formBuilder: FormBuilder,
     private validatorService: ValidatorService,
@@ -30,8 +32,7 @@ export class AddNewPropertyComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log((data as any ).default);
-    console.log((data1 as any ).default);
+    this.selectedUser = localStorage.getItem("Name");
     this.propertyForm = this.formBuilder.group({
       zipCode: new FormControl('', [Validators.required]),
       location: new FormControl('', [Validators.required]),
@@ -49,8 +50,8 @@ export class AddNewPropertyComponent implements OnInit {
     });
     if (this.isEditProperty) {
       this.title = "Update Selected Property to your account";
-      this.button = "Update";
-      const property = this.behaviourSubjectService.seletedPropertyToEdit;
+      this.button = "Update Property";
+      const property = this.behaviourSubjectService.selectedPropertyToEdit;
       this.propertyForm.setValue({
         zipCode: property.zipCode,
         location: property.location,
@@ -75,6 +76,8 @@ export class AddNewPropertyComponent implements OnInit {
   showNextPage() {
     this.submitForm = true;
     if (this.isEditProperty) {
+      var foundItem = this.behaviourSubjectService.properties.findIndex(x => x.id == this.behaviourSubjectService.selectedPropertyToEdit.id);
+      this.behaviourSubjectService.properties[foundItem]=this.propertyForm.value;
       this.toastr.success('Property updated successfully');
       this.router.navigate(['/property']);
     }

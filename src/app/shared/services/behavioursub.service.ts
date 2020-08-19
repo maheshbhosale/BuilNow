@@ -15,7 +15,7 @@ export class BehavioursubService {
   public users: CompanyUser[] = [];
   public isEditUser: boolean = false;
   public selectedUserToEdit: CompanyUser;
-  public seletedPropertyToEdit:Property;
+  public selectedPropertyToEdit:Property;
   public isEditProperty:boolean=false;
   public properties:Property[]=[];
 

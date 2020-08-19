@@ -34,7 +34,7 @@ export class PropertyComponent implements OnInit {
 
   editPropertyDetailById(property: Property) {
     this.behaviourSubjectService.isEditProperty = true;
-    this.behaviourSubjectService.seletedPropertyToEdit = property;
+    this.behaviourSubjectService.selectedPropertyToEdit = property;
     this.router.navigate(['/add-new-property']);
   }
 
