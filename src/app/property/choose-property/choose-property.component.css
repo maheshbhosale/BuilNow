@@ -1432,3 +1432,8 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
     height: auto;
     margin-left: 1%;
 }
+
+.tblCol {
+    width: 239px;
+    height: 24px;
+}
