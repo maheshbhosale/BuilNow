@@ -1,16 +1,17 @@
 <div class="container">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col Head">{{title}}</div>
         <div class="line1"></div>
         <div class="col Head">Property Details</div>
     </div>
     <div class="line">
 
-    </div>
+    </div> -->
     <div class="row">
 
         <!-- First half -->
-        <div class="col">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title}}</p>
             <form [formGroup]="propertyForm">
                 <div style="margin-top: 20px;">
 
@@ -67,8 +68,8 @@
                         <label for="inputAddress ">Address</label>
                         <input formControlName="address1" type="text " class="form-control " id="inputAddress "
                             placeholder="1234 Main St ">
-                        <input formControlName="address2" style="margin-top: 10px;" type="text " class="form-control " id="inputAddress2 "
-                            placeholder="Apartment, studio, or floor ">
+                        <input formControlName="address2" style="margin-top: 10px;" type="text " class="form-control "
+                            id="inputAddress2 " placeholder="Apartment, studio, or floor ">
                         <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                             *ngIf="!propertyForm.controls['address1'].valid && (propertyForm.controls['address1']?.touched || submitForm)">
                             <div *ngIf="propertyForm.controls['address1']?.errors.required ">
@@ -89,8 +90,8 @@
                             </div>
                         </div>
                         <div class="form-group col-md-6 ">
-                            <label for="inputTelephone2">&nbsp; </label>
-                            <input formControlName="telephone1" type="text " class="form-control "
+                            <label for="inputTelephone2" class="show">&nbsp; </label>
+                            <input formControlName="telephone2" type="text " class="form-control "
                                 id="inputTelephone2 ">
                             <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                                 *ngIf="!propertyForm.controls['telephone2'].valid && (propertyForm.controls['telephone2']?.touched || submitForm)">
@@ -105,8 +106,7 @@
                         <div class="form-group col-md-6 ">
                             <label for="inputTax ">Tax Map No</label>
                             <input type="text " class="form-control " id="inputTax" placeholder="Tax Map No"
-                                formControlName="tax"
-                                [ngClass]="{ 'is-invalid': submitted && f.tax.errors }" />
+                                formControlName="tax" [ngClass]="{ 'is-invalid': submitted && f.tax.errors }" />
                             <div *ngIf="submitted && f.tax.errors" class="invalid-feedback">
                                 <div *ngIf="f.tax.errors.required">Tax Map No is required</div>
                             </div>
@@ -114,7 +114,7 @@
 
 
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group col-md-6 ">
                             <label for="inputStatus">Current Status of Property</label>
@@ -160,7 +160,8 @@
 
                         </div>
                         <div class="form-group col-md-6 ">
-                            <input formControlName="buildingArea" type="text " class="form-control " id="inputBuildingArea">
+                            <input formControlName="buildingArea" type="text " class="form-control "
+                                id="inputBuildingArea">
                             <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                                 *ngIf="!propertyForm.controls['buildingArea'].valid && (propertyForm.controls['buildingArea']?.touched || submitForm)">
                                 <div *ngIf="propertyForm.controls['buildingArea']?.errors.required ">
@@ -173,27 +174,54 @@
                 </div>
             </form>
         </div>
-        <div class="line1">
 
-        </div>
         <!-- Second Half -->
-        <div class="col">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title1}}</p>
             <div style="font-size: 14px;">
 
                 <b>
-                    <div>Dear,</div>
-                    <div style="margin-left: 35px;">Mr. john Smith,<br>
-                        <span>Project location registered as below</span>,<br>{{f.address1.value}}<br>{{f.address2.value}}<br>{{f.zipCode.value}}<br>{{f.location.value}}<br>{{f.city.value}}<br>{{f.state.value}}<br>Telephone 
-                        {{f.telephone1.value}} {{f.telephone2.value}}<br>Tax Map No {{f.tax.value}}<br><br>
-                        <span>Current Status    {{f.status.value}}</span><br>
-                        <span>Site Topography    {{f.topology.value}}</span><br>
-                        <span>Existing Building Area   {{f.buildingArea.value}} sqft.</span><br>
+                    <div>Dear,{{selectedUser}},<br>
+                        <span>Project location registered as
+                            below</span>,<br><span style="margin-left: 35px;">{{f.address1.value}}</span><br><span style="margin-left: 35px;">{{f.address2.value}}</span><br><span style="margin-left: 35px;">{{f.zipCode.value}}</span><br><span style="margin-left: 35px;">Telephone
+                        {{f.telephone1.value}} , {{f.telephone2.value}}</span><br><span style="margin-left: 35px;">Tax Map No {{f.tax.value}}</span><br><br>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <span>Current Zoning</span><br>
+                            <span>Maximum Area to be Built on Lot</span><br>
+                            <span>Current Status</span><br>
+                            <span>Site Topography</span><br>
+                            <span>Existing Building Area</span><br>
+                            <span>Building Code</span><br>
+                            <span>Snow Loads</span><br>
+                            <span>Frost Depth</span><br>
+                            <span>Wind Speed</span><br>
+                            <span>Siesmic Co-efficient</span><br>
+                            <span>Soil Types</span>
+                        </div>
+                        <div class="col-4">
+                            <span>Residential</span><br>
+                            <span>1560 sqft</span><br>
+                            <span> {{f.status.value}}</span><br>
+                            <span>{{f.topology.value}}</span><br>
+                            <span>{{f.buildingArea.value}} sqft</span><br>
+                            <span>IBC 2020</span><br>
+                            <span>20 psf</span><br>
+                            <span>24"</span><br>
+                            <span>115 mph</span><br>
+                            <span>Ss 0.167S10.067</span><br>
+                            <span>D</span><br>
+                        </div>
+
                     </div>
                 </b>
 
             </div>
 
-            <button type="submit " class="btn btn-primary " style="float: right;margin-top: 400px;"
+            <button type="submit " class="btn "
+                style="float: right;margin-top: 280px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
                 (click)="showNextPage()">{{button}}</button>
         </div>
 
