@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectedPropertyComponent } from './selected-property/selected-property.component';
 import {ChoosePropertyComponent} from './choose-property/choose-property.component';
 import {PropertyListComponent} from './property-list/property-list.component';
+import { BuildPropertyComponent } from './build-property/build-property.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {PropertyListComponent} from './property-list/property-list.component';
     AddNewPropertyComponent,
     SelectedPropertyComponent,
     ChoosePropertyComponent,
-    PropertyListComponent
+    PropertyListComponent,
+    BuildPropertyComponent
   ],
   imports: [
     CommonModule,

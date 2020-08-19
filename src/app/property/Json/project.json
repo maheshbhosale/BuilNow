@@ -3,7 +3,8 @@
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
+        "TagLine": "432 sqft, 1 Bed, 1 Bath, Porch",
+        "image": "../../assets/Isometric1.PNG",
         "Geometry": {
             "Length": "26'-5",
             "Width": "16'-3",
@@ -32,51 +33,52 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "10 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "540",
-        "TagLine": "540sqft, 2 Bed, 1 Bath, Porch, Patio",
+        "TagLine": "540 sqft, 2 Bed, 1 Bath, Porch, Patio",
+        "image": "../../assets/Isometric2.PNG",
         "Geometry": {
             "Length": "35'-10/16\"",
             "Width": "10'-0",
@@ -105,51 +107,52 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"11 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "11 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "1000",
-        "TagLine": "1000sqft, 2 Bed, 2 Bath, Porch, Patio",
+        "TagLine": "1000 sqft, 2 Bed, 2 Bath, Porch, Patio",
+        "image": "../../assets/Isometric3.PNG",
         "Geometry": {
             "Length": "29'-8",
             "Width": "38'-2",
@@ -178,51 +181,52 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"12 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "12 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential(Standard)",
         "Type": "Single Family Detached",
         "Area": "1150",
-        "TagLine": "1150sqft, 2 Bed, 2 Bath, 2 Store. 2 Car Garage",
+        "TagLine": "1150 sqft, 2 Bed, 2 Bath, 2 Store. 2 Car Garage",
+        "image": "../../assets/Isometric4.PNG",
         "Geometry": {
             "Length": "54'-3",
             "Width": "39'-6",
@@ -251,51 +255,274 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"13 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "13 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
+        }
+    },
+    {
+        "ProductLine": "Residential(w/additional garage)",
+        "Type": "Single Family Detached",
+        "Area": "1150",
+        "TagLine": "1150 sqft, 2 Bed, 2 Bath, 2 Store, 3 Car Garage",
+        "image": "../../assets/Isometric5.PNG",
+        "Geometry": {
+            "Length": "54'-3",
+            "Width": "39'-6",
+            "BuildingHeight": "23'-7 13/16",
+            "NoOfStory": "1",
+            "Basement": "No",
+            "Garages": "3",
+            "GarageLocation": "Side attached"
+        },
+        "Feature": {
+            "Bedrooms": "3",
+            "Bathrooms": "2",
+            "StoresRoom": "2",
+            "SunRoom": "0"
+        },
+        "ArchitecturalFeatures": {
+            "ExteriorSheathig": "5/8\" OSB Board",
+            "InteriorSheathingOrDrywall": "1/2\" Gypsum Board",
+            "RoofSheathing": "1/2\" Cement Board",
+            "FloorSheathing": "1/2\" Gypsum Board",
+            "Doors": "Standard Wood door",
+            "Windows": "Standard Wood door",
+            "ExteriorPaintWalls": "Old Gold",
+            "ExteriorPaintRoof": "Brown",
+            "InteriorPaintWallBedroom1": "White",
+            "InteriorPaintWallBedroom2": "Light Green"
+        },
+        "StructuralFeatures": {
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
+        },
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
+        },
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "14 Lit \"Carrier\" Brand"
+        },
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
+        },
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
+        },
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
+        }
+    },
+    {
+        "ProductLine": "Residential(w/additional garage)",
+        "Type": "Single Family Detached",
+        "Area": "1150",
+        "TagLine": "1150 sqft, 2 Bed, 2 Bath, 2 Store, 3 Car Garage",
+        "image": "../../assets/Isometric6.PNG",
+        "Geometry": {
+            "Length": "54'-3",
+            "Width": "39'-6",
+            "BuildingHeight": "23'-7 13/16",
+            "NoOfStory": "1",
+            "Basement": "No",
+            "Garages": "3",
+            "GarageLocation": "Side attached"
+        },
+        "Feature": {
+            "Bedrooms": "3",
+            "Bathrooms": "2",
+            "StoresRoom": "2",
+            "SunRoom": "0"
+        },
+        "ArchitecturalFeatures": {
+            "ExteriorSheathig": "5/8\" OSB Board",
+            "InteriorSheathingOrDrywall": "1/2\" Gypsum Board",
+            "RoofSheathing": "1/2\" Cement Board",
+            "FloorSheathing": "1/2\" Gypsum Board",
+            "Doors": "Standard Wood door",
+            "Windows": "Standard Wood door",
+            "ExteriorPaintWalls": "Old Gold",
+            "ExteriorPaintRoof": "Brown",
+            "InteriorPaintWallBedroom1": "White",
+            "InteriorPaintWallBedroom2": "Light Green"
+        },
+        "StructuralFeatures": {
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
+        },
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
+        },
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "15 Lit \"Carrier\" Brand"
+        },
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
+        },
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
+        },
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
+        }
+    },
+    {
+        "ProductLine": "Residential(w/additional bedroom)",
+        "Type": "Single Family Detached",
+        "Area": "1150",
+        "TagLine": "1150 sqft, 1 Bed, 1 Bath, Porch",
+        "image": "../../assets/Isometric3.PNG",
+        "Geometry": {
+            "Length": "26'-5",
+            "Width": "16'-3",
+            "BuildingHeight": "13'-3",
+            "NoOfStory": "1",
+            "Basement": "No",
+            "Garages": "0",
+            "GarageLocation": ""
+        },
+        "Feature": {
+            "Bedrooms": "1",
+            "Bathrooms": "1",
+            "StoresRoom": "0",
+            "SunRoom": "0"
+        },
+        "ArchitecturalFeatures": {
+            "ExteriorSheathig": "5/8\" OSB Board",
+            "InteriorSheathingOrDrywall": "1/2\" Gypsum Board",
+            "RoofSheathing": "1/2\" Cement Board",
+            "FloorSheathing": "1/2\" Gypsum Board",
+            "Doors": "Standard Wood door",
+            "Windows": "Standard Wood door",
+            "ExteriorPaintWalls": "Old Gold",
+            "ExteriorPaintRoof": "Brown",
+            "InteriorPaintWallBedroom1": "White",
+            "InteriorPaintWallBedroom2": "Light Green"
+        },
+        "StructuralFeatures": {
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
+        },
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
+        },
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "10 Lit \"Carrier\" Brand"
+        },
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
+        },
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
+        },
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
+        "TagLine": "432 sqft, 1 Bed, 1 Bath, Porch",
+        "image": "../../assets/Isometric3.PNG",
         "Geometry": {
             "Length": "26'-5",
             "Width": "16'-3",
@@ -324,123 +551,52 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "10 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
-        }
-    },{
-        "ProductLine": "Residential",
-        "Type": "Single Family Detached",
-        "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
-        "Geometry": {
-            "Length": "26'-5",
-            "Width": "16'-3",
-            "BuildingHeight": "13'-3",
-            "NoOfStory": "1",
-            "Basement": "No",
-            "Garages": "0",
-            "GarageLocation": ""
-        },
-        "Feature": {
-            "Bedrooms": "1",
-            "Bathrooms": "1",
-            "StoresRoom": "0",
-            "SunRoom": "0"
-        },
-        "ArchitecturalFeatures": {
-            "ExteriorSheathig": "5/8\" OSB Board",
-            "InteriorSheathingOrDrywall": "1/2\" Gypsum Board",
-            "RoofSheathing": "1/2\" Cement Board",
-            "FloorSheathing": "1/2\" Gypsum Board",
-            "Doors": "Standard Wood door",
-            "Windows": "Standard Wood door",
-            "ExteriorPaintWalls": "Old Gold",
-            "ExteriorPaintRoof": "Brown",
-            "InteriorPaintWallBedroom1": "White",
-            "InteriorPaintWallBedroom2": "Light Green"
-        },
-        "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
-        },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
-        },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
-        },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
-        },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
-        },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
+        "TagLine": "432 sqft, 1 Bed, 1 Bath, Porch",
+        "image": "../../assets/Isometric3.PNG",
         "Geometry": {
             "Length": "26'-5",
             "Width": "16'-3",
@@ -469,51 +625,52 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "10 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     },
     {
         "ProductLine": "Residential",
         "Type": "Single Family Detached",
         "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
+        "TagLine": "432 sqft, 1 Bed, 1 Bath, Porch",
+        "image": "../../../assets/Isometric3.PNG",
         "Geometry": {
             "Length": "26'-5",
             "Width": "16'-3",
@@ -542,117 +699,44 @@
             "InteriorPaintWallBedroom2": "Light Green"
         },
         "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
+            "ExteriorWalls": "5.5\" CFS wall",
+            "InternalWalls": "3.5\" CFS wall",
+            "Stairs": "3.5\" CFS",
+            "HotRolledSteel": "2\" x 2\" Tubes",
+            "Floors": "16 Ga Versadeck",
+            "Roof": "16 Ga Versadeck"
         },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
+        "Foundation": {
+            "Slab": "4\" Slab on Grade",
+            "BasementWalls": "8\" thick Basement wall",
+            "Footings": "24\" wide 4\" thick footing"
         },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
+        "MechanicalFeatures": {
+            "HVACUnits": "5 Ton \"Carrier\" Brand",
+            "Ducts": "Standard",
+            "WaterHeaters": "10 Lit \"Carrier\" Brand"
         },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
+        "ElectricalFeatures": {
+            "SwitchBoxes": "\"Anchor\" Brand",
+            "ElectricalFixtures": "\"GE\" Brand",
+            "Wiring": "\"Anchor\" Brand",
+            "Lights": "\"GE\" Brand",
+            "SmokeAndCoAlarms": "\"GE\" Brand",
+            "CellingFans": "\"GE\" Brand"
         },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
+        "PlumbingFeatures": {
+            "PlumbingPipes": "Standard",
+            "Faucets": "\"Hindware\" Brand",
+            "WC": "\"Hindware\" Brand",
+            "WashBasins": "\"Hindware\" Brand",
+            "Showers": "\"Hindware\" Brand",
+            "BathTubs": "\"Hindware\" Brand"
         },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
-        }
-    },
-    {
-        "ProductLine": "Residential",
-        "Type": "Single Family Detached",
-        "Area": "432",
-        "TagLine": "432sqft, 1 Bed, 1 Bath, Porch",
-        "Geometry": {
-            "Length": "26'-5",
-            "Width": "16'-3",
-            "BuildingHeight": "13'-3",
-            "NoOfStory": "1",
-            "Basement": "No",
-            "Garages": "0",
-            "GarageLocation": ""
-        },
-        "Feature": {
-            "Bedrooms": "1",
-            "Bathrooms": "1",
-            "StoresRoom": "0",
-            "SunRoom": "0"
-        },
-        "ArchitecturalFeatures": {
-            "ExteriorSheathig": "5/8\" OSB Board",
-            "InteriorSheathingOrDrywall": "1/2\" Gypsum Board",
-            "RoofSheathing": "1/2\" Cement Board",
-            "FloorSheathing": "1/2\" Gypsum Board",
-            "Doors": "Standard Wood door",
-            "Windows": "Standard Wood door",
-            "ExteriorPaintWalls": "Old Gold",
-            "ExteriorPaintRoof": "Brown",
-            "InteriorPaintWallBedroom1": "White",
-            "InteriorPaintWallBedroom2": "Light Green"
-        },
-        "StructuralFeatures": {
-            "ExteriorWalls":"5.5\" CFS wall",
-            "InternalWalls":"3.5\" CFS wall",
-            "Stairs":"3.5\" CFS",
-            "HotRolledSteel":"2\" x 2\" Tubes",
-            "Floors":"16 Ga Versadeck",
-            "Roof":"16 Ga Versadeck"
-        },
-        "Foundation":{
-            "Slab":"4\" Slab on Grade",
-            "BasementWalls":"8\" thick Basement wall",
-            "Footings":"24\" wide 4\" thick footing"
-        },
-        "MechanicalFeatures":{
-            "HVACUnits":"5 Ton \"Carrier\" Brand",
-            "Ducts":"Standard",
-            "WaterHeaters":"10 Lit \"Carrier\" Brand"
-        },
-        "ElectricalFeatures":{
-            "SwitchBoxes":"\"Anchor\" Brand",
-            "ElectricalFixtures":"\"GE\" Brand",
-            "Wiring":"\"Anchor\" Brand",
-            "Lights":"\"GE\" Brand",
-            "SmokeAndCoAlarms":"\"GE\" Brand",
-            "CellingFans":"\"GE\" Brand"
-        },
-        "PlumbingFeatures":{
-            "PlumbingPipes":"Standard",
-            "Faucets":"\"Hindware\" Brand",
-            "WC":"\"Hindware\" Brand",
-            "WashBasins":"\"Hindware\" Brand",
-            "Showers":"\"Hindware\" Brand",
-            "BathTubs":"\"Hindware\" Brand"
-        },
-        "Appliances":{
-            "Refrigerator":"300 Lit \"Whirlpool\" Double Door",
-            "RangeCookTops":"4 Burner \"Elica\" Brand",
-            "Microwave":"30 Lit \"Whirlpool\" Brand",
-            "WashingMachineDryer":"10 Lit \"Carrier\" Brand"
+        "Appliances": {
+            "Refrigerator": "300 Lit \"Whirlpool\" Double Door",
+            "RangeCookTops": "4 Burner \"Elica\" Brand",
+            "Microwave": "30 Lit \"Whirlpool\" Brand",
+            "WashingMachineDryer": "10 Lit \"Carrier\" Brand"
         }
     }
 ]
