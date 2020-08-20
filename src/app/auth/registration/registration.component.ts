@@ -19,45 +19,42 @@ export class RegistrationComponent implements OnInit {
     private formBuilder: FormBuilder,
     private validatorService: ValidatorService,
     private router: Router
-    ) { 
-      this.countries = [{id: 'USA', name: 'United States'}, {id: 'UK', name: 'United Kingdom'}, {id: 'FR', name: 'France'}];
-        this.states = [{ id: "AL", name: "Alabama" }, { id: "AK", name: "Alaska" }, { id: "AZ", name: "Arizona" }, { id: "AR", name: "Arkansas" }];
-    }
+  ) {
+    this.countries = [{ id: 'USA', name: 'United States' }, { id: 'UK', name: 'United Kingdom' }, { id: 'FR', name: 'France' }];
+    this.states = [{ id: "AL", name: "Alabama" }, { id: "AK", name: "Alaska" }, { id: "AZ", name: "Arizona" }, { id: "AR", name: "Arkansas" }];
+  }
 
   ngOnInit() {
-
-
     this.registerForm = this.formBuilder.group({
-      firstname : new FormControl('',[Validators.required]),
-      lastname : new FormControl('',[Validators.required]),
-      companyname: new FormControl('',[Validators.required]),
+      firstname: new FormControl('', [Validators.required]),
+      lastname: new FormControl('', [Validators.required]),
+      companyname: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, this.validatorService.emailValidator]),
-      address: new FormControl('',[Validators.required]),
-      city: new FormControl('',[Validators.required]),
-      state: new FormControl('',[Validators.required]),
-      zipcode: new FormControl('',[Validators.required]),
-      country: new FormControl('',[Validators.required]),
-      telephone: new FormControl('',[Validators.required]),
-      fax: new FormControl('',[Validators.required]),     
+      address: new FormControl('', [Validators.required]),
+      city: new FormControl('', [Validators.required]),
+      state: new FormControl('', [Validators.required]),
+      zipcode: new FormControl('', [Validators.required]),
+      country: new FormControl('', [Validators.required]),
+      telephone: new FormControl('', [Validators.required]),
+      fax: new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required, this.validatorService.Passwordvalidator]),
       confirmpassword: new FormControl('', [Validators.required, this.validatorService.Passwordvalidator]),
     });
   }
 
+  // convenience getter for easy access to form fields
+  get f() { return this.registerForm.controls; }
 
-  RegisterUser(){
-
+  RegisterUser() {
     this.submitForm = true;
     this.router.navigate(['/login']);
-
   }
 
-  setradio(no:number){
-    if(no == 1){
+  setradio(no: number) {
+    if (no == 1) {
       this.Isdisabled = true;
-    }else{
+    } else {
       this.Isdisabled = false;
-
     }
   }
 
