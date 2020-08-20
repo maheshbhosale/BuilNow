@@ -6,7 +6,7 @@ body{
 }
 .navbar {
     position: fixed;
-    top: 61px;
+    top: 95px;
 }
 .scrolled{
     top: 0px;
@@ -222,7 +222,7 @@ button span {
     background-repeat: no-repeat;
 }
 .preview-background .image-container {
-    background-image: url(../../../assets/background.jpg);
+    background-image: url(../../../assets/bkground.jpg);
 }
 .preview-viewport {
     height: 100%;
@@ -241,7 +241,7 @@ button span {
 .vehicle-configured {
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 50%;
     transform: translate(-50%,-50%);
     backface-visibility: visible;
     width: 100%;
@@ -249,16 +249,16 @@ button span {
     z-index: 1;
 }
 .vehicle-configured img {
-    left: 49%;
-    top: 55%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
 }
 img {
     display: inline-block;
     vertical-align: middle;
-    max-width: 99%;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     border: 0;
 }
 .vehicle-configured.angleShown {
@@ -359,7 +359,7 @@ li {
         width: 50%;
         background-color: rgba(0,0,0,0.7);
         z-index: 10;
-        padding-top: 130px;
+        padding-top: 70px;
     }
 }
 @media only screen and (min-width: 48em){
