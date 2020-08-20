@@ -193,13 +193,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <button type="submit" class="btn btn-primary " (click)="RegisterUser()">Register</button>
                 </div>
             </form>
         </div>
         <div class="line1">
-
         </div>
         <!-- Second Half -->
         <div class="col">
@@ -207,15 +204,17 @@
 
                 <b>
                     <div>Dear,</div>
-                    <div style="margin-left: 35px;">Mr. john Smith,<br><span
-                            style="color: blue;">johnSmith@gmail.com</span>,<br>ABC
-                        Company,<br>Address1<br>Address<br>Reston,Varginia,United States<br>20190<br>Telephone +1
-                        (703)481 2100 <br>Fax +1 (703)481 2100
+                    <div style="margin-left: 35px;">{{f.firstname.value}} {{f.lastname.value}}<br><span
+                            style="color: blue;">{{f.email.value}}</span><br>
+                        {{f.companyname.value}}<br>{{f.address.value}}<br>
+                        {{f.city.value}} {{f.state.value}} {{f.country.value}} {{f.zipcode.value}}<br>
+                        Telephone {{f.telephone.value}} <br>Fax {{f.fax.value}}
                     </div>
                 </b>
-
             </div>
+            <button type="submit " class="btn "
+                style="float: right;margin-top: 335px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                (click)="RegisterUser()">Register</button>
         </div>
-
     </div>
 </div>
