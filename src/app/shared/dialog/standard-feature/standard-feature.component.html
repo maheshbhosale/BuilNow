@@ -1,1 +1,368 @@
-<p>standard-feature works!</p>
+<!-- <p>standard-feature works!</p>
+<button (click)="hideDialog()">Close</button> -->
+<div class="panel-container visible" style="background-color: rgb(239, 239, 239); top: 0px; height: 408px;">
+    <!-- uiView: content -->
+    <div class="panel-content ng-scope" ui-view="content" style="height: 408px; top: 95px;">
+
+        <div class="modal-wrap-container">
+            <div class="row">
+                <div class="small-12 columns">
+
+                    <div class="modal-content-container">
+                        <div class="modal-content">
+
+                            <div class="standard-features-container">
+                                <h2 class="std-features-heading">
+                                    <strong class="ng-binding">Single Family Detached </strong> <span>Standard Features</span>
+                                </h2>
+
+                                <ul>
+                                    <!-- ngRepeat: feature in features -->
+                                    <li ng-repeat="feature in features" class="ng-scope">
+                                        <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                            Engine/Chassis</p>
+                                        <ul>
+                                            <!-- ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">2.0-liter DOHC engine
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Power: 152 hp @ 6,000 rpm
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Torque: 145 lb-ft @ 4,000
+                                                rpm </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Fully synchronized 5-speed
+                                                manual transmission </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Subaru Symmetrical
+                                                All-Wheel Drive </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Vehicle Dynamics Control
+                                                (VDC) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Traction Control System
+                                                (TCS) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Incline Start Assist </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Fuel economy** w/ manual
+                                                transmission (hwy/city): 31/23 MPG </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Fuel tank capacity: 13.2
+                                                gal. </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Electric Power Assisted
+                                                Steering (EPAS) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">4-wheel independent
+                                                suspension </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">4-wheel disc brakes </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Brake Assist </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Brake Override System
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                        </ul>
+                                    </li><!-- end ngRepeat: feature in features -->
+                                    <li ng-repeat="feature in features" class="ng-scope">
+                                        <p class="feature-title ng-binding" ng-bind-html="feature.title">Exterior
+                                        </p>
+                                        <ul>
+                                            <!-- ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">16 x 6.5-inch steel wheels
+                                                with covers </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">205/55 R16 89V all-season
+                                                tires </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Temporary use spare tire
+                                                T135/80 D16 </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Multi-reflector halogen
+                                                headlights </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Black folding side mirrors
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Two-speed windshield
+                                                wipers with variable intermittent mode and mist feature </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Body-color door handles
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Roof crossbar mounting
+                                                points </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                        </ul>
+                                    </li><!-- end ngRepeat: feature in features -->
+                                    <li ng-repeat="feature in features" class="ng-scope">
+                                        <p class="feature-title ng-binding" ng-bind-html="feature.title">Interior
+                                        </p>
+                                        <ul>
+                                            <!-- ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Manually adjustable front
+                                                seats </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">60/40-split flat-folding
+                                                rear seatbacks </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Cloth upholstery </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Instrument cluster with
+                                                speedometer and tachometer </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Multifunction display
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                        </ul>
+                                    </li><!-- end ngRepeat: feature in features -->
+                                    <li ng-repeat="feature in features" class="ng-scope">
+                                        <p class="feature-title ng-binding" ng-bind-html="feature.title">Amenities
+                                        </p>
+                                        <ul>
+                                            <!-- ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Power windows </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Power side mirrors </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Electronic cruise control
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">3-spoke steering wheel
+                                                with integrated controls </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Manually adjustable
+                                                tilt/telescoping steering column </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Front seat USB input port
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Dual cup holders in center
+                                                console </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Single bottle holder in
+                                                each door panel </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Sun visors with concealed
+                                                vanity mirrors </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Center console with
+                                                armrest lid </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Lockable glove box </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Manually adjustable
+                                                CFC-free air conditioning system </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">STARLINK<sup>®</sup>
+                                                6.5-inch Multimedia </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">4 speakers </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                        </ul>
+                                    </li><!-- end ngRepeat: feature in features -->
+                                    <li ng-repeat="feature in features" class="ng-scope">
+                                        <p class="feature-title ng-binding" ng-bind-html="feature.title">Safety</p>
+                                        <ul>
+                                            <!-- ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Vehicle Dynamics Control
+                                                (VDC) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">4-wheel Anti-lock Braking
+                                                system (ABS) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Brake Assist </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Brake Override System
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Traction Control System
+                                                (TCS) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Daytime Running Lights
+                                                (DRL) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Tire Pressure Monitoring
+                                                System (TPMS) </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Rear-Vision Camera </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Dual-stage deployment
+                                                driver's and front passenger's front airbags(SRS)<sup><a
+                                                        class="disclaimer" data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Subaru advanced frontal
+                                                airbag system(SRS)<sup><a class="disclaimer"
+                                                        data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Seat-mounted front
+                                                side-impact airbags (SRS)<sup><a class="disclaimer"
+                                                        data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Side-curtain airbags
+                                                protecting front and rear outboard occupants (SRS)<sup><a
+                                                        class="disclaimer" data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Rollover sensor
+                                                (SRS)<sup><a class="disclaimer" data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Driver's knee airbag
+                                                (SRS)<sup><a class="disclaimer" data-id="101">[14]</a></sup> </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Whiplash protection front
+                                                seats with height- and tilt-adjustable head restraints </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Three individual rear-seat
+                                                head restraints </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Height-adjustable 3-point
+                                                front seatbelts </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Rear child-safety door
+                                                locks </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">LATCH system: Lower
+                                                Anchors and Tethers for Children </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Keyless entry system </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Anti-theft security system
+                                            </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            <li ng-repeat="standard in feature.standardFeatures"
+                                                ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                class="feature-group ng-binding ng-scope">Engine immobilizer </li>
+                                            <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                        </ul>
+                                    </li><!-- end ngRepeat: feature in features -->
+                                </ul>
+                                <button (click)="hideDialog()">close</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

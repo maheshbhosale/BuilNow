@@ -8,7 +8,7 @@
 				<span>Single Family Detached House</span>
 			</h1>
 			<div class="topbar-button btn-change-vehicle">
-				<button routerLink="/firstpage" global-modal-button="" content="change-vehicle-content"
+				<button routerLink="/selected-property" global-modal-button="" content="change-vehicle-content"
 					class="ng-isolate-scope" style="outline: none;">
 					<span>CHANGE BUILDING</span>
 				</button>
@@ -18,7 +18,7 @@
 		<div class="buttons">
 
 			<div class="topbar-button btn-standard">
-				<button global-modal-button="" content="standard-features-content" class="ng-isolate-scope" style="outline: none;">
+				<button (click)="openStandardModal()" global-modal-button="" content="standard-features-content" class="ng-isolate-scope" style="outline: none;">
 					<span>STANDARD FEATURES</span>
 				</button>
 			</div>
@@ -31,7 +31,7 @@
 				<div class="preview-background">
 					<style class="ng-binding">
 						.preview-background .image-container {
-							background-image: url(../../assets/Background.jpg);
+							background-image: url(../../assets/background.jpg);
 						}
 					</style>
 					<div class="image-container"></div>
@@ -39,7 +39,7 @@
 				<div class="preview-viewport">
 					<div class="vehicle-configured-wrap ng-scope colorShown">
 						<div class="vehicle-configured ng-scope">
-							<img src="../../assets/front.png">
+							<img src="../../assets/isoright.png">
 							<!-- style="height: 600px;" -->
 						</div>
 					</div>
