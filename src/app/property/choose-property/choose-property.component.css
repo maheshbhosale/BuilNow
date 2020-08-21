@@ -898,7 +898,7 @@ li {
 
 @media only screen and (min-width: 768px) {
     .compare-wrapper .image-wrapper {
-        height: 44px;
+        height: 60px;
         width: 84px;
         margin: 16px 66.15px 0px;
         background-repeat: no-repeat;
@@ -1342,7 +1342,7 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
 
 .sub-header {
     text-align: center;
-    padding: 50px 0 10px;
+    padding: 0px 0 10px;
     font-size: 36px;
     margin: 0;
     left: 1%;
@@ -1436,4 +1436,18 @@ html:not(.touch) .compare-wrapper .legal-disclaimers>div {
 .tblCol {
     width: 239px;
     height: 24px;
+}
+
+#accordion {
+    width: 80.5%;
+    margin-left: 17.5%;
+    margin-top: -1%;
+}
+
+.feature {
+    font-size: 21px;
+    font-weight: 500;
+    /* float: left; */
+    margin-right: 70px;
+    color: #09f;
 }
