@@ -8,12 +8,16 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(mod => mod.AuthModule)
   },
   {
-    path:'company',
-    loadChildren:()=>import('./company/company.module').then(mod=>mod.CompanyModule)
+    path: 'company',
+    loadChildren: () => import('./company/company.module').then(mod => mod.CompanyModule)
   },
   {
-    path:'property',
-    loadChildren:()=>import('./property/property.module').then(mod=>mod.PropertyModule)
+    path: 'property',
+    loadChildren: () => import('./property/property.module').then(mod => mod.PropertyModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then(mod => mod.PaymentModule)
   }
 ];
 
