@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+
+        <!-- First half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">Select Payment Option</p>
+            <form>
+
+            </form>
+        </div>
+
+        <!-- Second Half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Option Details</p>
+            <div style="font-size: 14px;">
+
+                <b>
+                    <div>Dear,</div>
+                    <div style="margin-left: 35px;">{{selectedUser}}},<br>
+                        Yo have selected for the "A & E Permit"<br>
+                    </div>
+                </b>
+
+            </div>
+            <button type="submit " class="btn "
+                style="float: right;margin-top: 335px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                (click)="showNextPage()">Click to Pay</button>
+        </div>
+    </div>
+</div>
