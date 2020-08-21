@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { StandardFeatureComponent } from './dialog/standard-feature/standard-feature.component';
 import { BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
+import { ModalService } from '../core/modal.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
     HeaderComponent,
     FooterComponent
   ],
-  providers: [BsModalRef],
+  providers: [BsModalRef,ModalService],
   entryComponents: [StandardFeatureComponent]
 })
 export class SharedModule { }
