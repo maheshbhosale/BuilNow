@@ -15,9 +15,10 @@ export class BehavioursubService {
   public users: CompanyUser[] = [];
   public isEditUser: boolean = false;
   public selectedUserToEdit: CompanyUser;
-  public selectedPropertyToEdit:Property;
-  public isEditProperty:boolean=false;
-  public properties:Property[]=[];
+  public selectedPropertyToEdit: Property;
+  public isEditProperty: boolean = false;
+  public properties: Property[] = [];
+  public selectedPropertyToBuild: any;
 
   // send data to header
   SendUserDataToHeader(data: any) {

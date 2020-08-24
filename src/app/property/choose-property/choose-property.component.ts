@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as property from '../Json/project.json';
+import { BehavioursubService } from 'src/app/shared/services/behavioursub.service';
 
 @Component({
   selector: 'app-choose-property',
