@@ -166,7 +166,7 @@ button span {
 }
 .customize-header .buttons {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
 }
 .customize-header .buttons .btn-standard {
