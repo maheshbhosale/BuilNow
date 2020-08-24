@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+
+        <!-- First half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
+            <b><p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Details</p></b>
+            
+        </div>
+
+        <!-- Second Half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <b><p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Confirmation Details</p></b>
+            <div style="font-size: 14px;">
+
+                <p>Dear <b>{{selectedUser}},</b></p>
+                <p>Payment Amount<b>$21,600</b> for your Order No. 000-000 is successful</p><br><br>
+                <p>Order: <b>Single Family Detached House 1,150 sq.ft, A & E Permit,</b></p>
+            </div>
+            <button type="submit " class="btn "
+                style="float: right;margin-top: 335px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                (click)="showNextPage()">Click to Pay</button>
+        </div>
+    </div>
+</div>
