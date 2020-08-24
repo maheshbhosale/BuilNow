@@ -641,6 +641,7 @@ h3{
     color: #666;
     opacity: 1;
     transition: opacity .2s;
+    right: 45px;
 }
 .transmissionBtn.btn-add button {
     background-color: #fff;

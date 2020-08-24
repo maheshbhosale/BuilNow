@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row" *ngIf=false>
                         <div class="form-group col-md-6 ">
                             <label for="inputTelephone1">Telephone</label>
                             <input formControlName="telephone1" type="text " class="form-control " id="inputTelephone1">
@@ -183,7 +183,7 @@
                 <b>
                     <div>Dear,{{selectedUser}},<br>
                         <span>Project location registered as
-                            below</span>,<br><span style="margin-left: 35px;">{{f.address1.value}}</span><br><span style="margin-left: 35px;">{{f.address2.value}}</span><br><span style="margin-left: 35px;">{{f.zipCode.value}}</span><br><span style="margin-left: 35px;">Telephone
+                            below</span>,<br><span style="margin-left: 35px;">{{f.address1.value}}</span><br><span style="margin-left: 35px;">{{f.address2.value}}</span><br><span style="margin-left: 35px;">{{f.zipCode.value}}</span><br><span *ngIf=false style="margin-left: 35px;">Telephone
                         {{f.telephone1.value}} , {{f.telephone2.value}}</span><br><span style="margin-left: 35px;">Tax Map No {{f.tax.value}}</span><br><br>
 
                     </div>
