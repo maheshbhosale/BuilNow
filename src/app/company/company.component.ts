@@ -36,4 +36,8 @@ export class CompanyComponent implements OnInit {
     this.behaviourSubjectService.selectedUserToEdit = user;
     this.router.navigate(['/add-new-user']);
   }
+
+  addNewUser(){
+    this.behaviourSubjectService.isEditUser=false;
+  }
 }

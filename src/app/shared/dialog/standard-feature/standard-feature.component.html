@@ -1,0 +1,411 @@
+<div class="modal-container position-right modal-right">
+    <div class="panel-container visible"
+        style="background-color: rgb(239, 239, 239); margin-top: 13.6%; height: 408px;">
+        <!-- uiView: content -->
+        <div class="panel-content ng-scope" ui-view="content" style="height: 560px; top: 0px;">
+            <div class="modal-wrap-container">
+                <div class="row">
+                    <div class="small-12 columns">
+
+                        <div class="modal-content-container">
+                            <div class="modal-content">
+
+                                <div class="standard-features-container">
+                                    <h2 class="std-features-heading">
+                                        <strong class="ng-binding">Single Family Detached </strong> <span>Standard
+                                            Features</span>
+                                    </h2>
+
+                                    <ul>
+                                        <!-- ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <!-- <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                            Engine/Chassis</p> -->
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ProductLine:
+                                                    {{property.ProductLine}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Type: {{property.Type}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Area in sq ft:
+                                                    {{property.Area}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">TagLine:
+                                                    {{property.TagLine}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">Geometry
+                                            </p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Length:
+                                                    {{property.Geometry.Length}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Width:
+                                                    {{property.Geometry.Width}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Building Height:
+                                                    {{property.Geometry.BuildingHeight}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">No of Story:
+                                                    {{property.Geometry.NoOfStory}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Basement:
+                                                    {{property.Geometry.Basement}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Garages:
+                                                    {{property.Geometry.Garages}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">GarageLocation:
+                                                    {{property.Geometry.GarageLocation}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">Feature
+                                            </p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Bedrooms:
+                                                    {{property.Feature.Bedrooms}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Bathrooms:
+                                                    {{property.Feature.Bathrooms}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">StoresRoom:
+                                                    {{property.Feature.StoresRoom}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">SunRoom:
+                                                    {{property.Feature.SunRoom}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                ArchitecturalFeatures
+                                            </p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ExteriorSheathig:
+                                                    {{property.ArchitecturalFeatures.ExteriorSheathig}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">
+                                                    InteriorSheathingOrDrywall:
+                                                    {{property.ArchitecturalFeatures.InteriorSheathingOrDrywall}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">RoofSheathing:
+                                                    {{property.ArchitecturalFeatures.RoofSheathing}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">FloorSheathing:
+                                                    {{property.ArchitecturalFeatures.FloorSheathing}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Doors:
+                                                    {{property.ArchitecturalFeatures.Doors}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Windows:
+                                                    {{property.ArchitecturalFeatures.Windows}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ExteriorPaintWalls:
+                                                    {{property.ArchitecturalFeatures.ExteriorPaintWalls}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ExteriorPaintRoof:
+                                                    {{property.ArchitecturalFeatures.ExteriorPaintRoof}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">InteriorPaintWallBedroom1:
+                                                    {{property.ArchitecturalFeatures.InteriorPaintWallBedroom1}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">InteriorPaintWallBedroom2:
+                                                    {{property.ArchitecturalFeatures.InteriorPaintWallBedroom2}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                StructuralFeatures</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ExteriorWalls:
+                                                    {{property.StructuralFeatures.ExteriorWalls}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">InternalWalls:
+                                                    {{property.StructuralFeatures.InternalWalls}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Stairs:
+                                                    {{property.StructuralFeatures.Stairs}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">HotRolledSteel:
+                                                    {{property.StructuralFeatures.HotRolledSteel}}
+                                                </li><!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Floors:
+                                                    {{property.StructuralFeatures.Floors}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Roof:
+                                                    {{property.StructuralFeatures.Roof}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                Foundation</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Slab:
+                                                    {{property.Foundation.Slab}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">BasementWalls:
+                                                    {{property.Foundation.BasementWalls}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Footings:
+                                                    {{property.Foundation.Footings}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                MechanicalFeatures</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">HVACUnits:
+                                                    {{property.MechanicalFeatures.HVACUnits}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Ducts:
+                                                    {{property.MechanicalFeatures.Ducts}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">WaterHeaters:
+                                                    {{property.MechanicalFeatures.WaterHeaters}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                ElectricalFeatures</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">SwitchBoxes:
+                                                    {{property.ElectricalFeatures.SwitchBoxes}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">ElectricalFixtures:
+                                                    {{property.ElectricalFeatures.ElectricalFixtures}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Wiring:
+                                                    {{property.ElectricalFeatures.Wiring}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Lights:
+                                                    {{property.ElectricalFeatures.Lights}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">SmokeAndCoAlarms:
+                                                    {{property.ElectricalFeatures.SmokeAndCoAlarms}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">CellingFans:
+                                                    {{property.ElectricalFeatures.CellingFans}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                PlumbingFeatures</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">PlumbingPipes:
+                                                    {{property.PlumbingFeatures.PlumbingPipes}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Faucets:
+                                                    {{property.PlumbingFeatures.Faucets}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">WC:
+                                                    {{property.PlumbingFeatures.WC}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">WashBasins:
+                                                    {{property.PlumbingFeatures.WashBasins}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Showers:
+                                                    {{property.PlumbingFeatures.Showers}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">BathTubs:
+                                                    {{property.PlumbingFeatures.BathTubs}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                        <li ng-repeat="feature in features" class="ng-scope">
+                                            <p class="feature-title ng-binding" ng-bind-html="feature.title">
+                                                Appliances</p>
+                                            <ul>
+                                                <!-- ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Refrigerator:
+                                                    {{property.Appliances.Refrigerator}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">RangeCookTops:
+                                                    {{property.Appliances.RangeCookTops}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">Microwave:
+                                                    {{property.Appliances.Microwave}}</li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                                <li ng-repeat="standard in feature.standardFeatures"
+                                                    ng-bind-html="standard.name + ' ' + standard.value | sanitizeHtml"
+                                                    class="feature-group ng-binding ng-scope">WashingMachineDryer:
+                                                    {{property.Appliances.WashingMachineDryer}}
+                                                </li>
+                                                <!-- end ngRepeat: standard in feature.standardFeatures -->
+                                            </ul>
+                                        </li><!-- end ngRepeat: feature in features -->
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button (click)="hideDialog()" class="close-btn ">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
