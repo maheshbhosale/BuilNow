@@ -19,6 +19,39 @@
                   
                 </tbody>
               </table>
+              <p class="Head" >Choose Consultant for Review & Submission of Permit</p>
+              <table class="table table-bordered">
+                <thead>
+                  <tr style="background-color: rgb(226, 222, 222);">
+                    <th>Consultant</th>
+                    <th>Process time</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>                 
+                  <tr>
+                    <td><input type="radio" name="name"> Best time</td>
+                    <td>1 Week</td>
+                    <td>$600</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="name"> Regular Process</td>
+                    <td>4 Weeks</td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="name"> Best Price Certified in USA</td>
+                    <td>3 Weeks</td>
+                    <td>$400</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="name"> Best Price</td>
+                    <td>6 Weeks</td>
+                    <td>$200</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
         </div>
 
         <!-- Second Half -->
@@ -28,10 +61,38 @@
 
                 <p>Dear <b>{{selectedUser}},</b></p>
                 <p>You have selected for <b>"A & E Permit"</b></p><br>
-                <p>You will receive following,</p>
-            </div>
+                <p style="margin-bottom: 5px;">You will receive following,</p>
+                <ol style="padding: 0px 0px 0px 16px;">
+                  <li> Architectural Permit Drawings (AutoCAD and PDF files)
+                  </li>
+                  <li>Structural Permit Drawings (AutoCAD and PDF files)
+                  </li>
+                  <li>MEP Permit Drawings (AutoCAD and PDF files)
+                  </li>
+                  <li>Review and modification from Consultants for filing for Permit to County
+                  </li>
+                  <li>Solving Queries from County on the drawings submitted for Permit
+                  </li>
+                  <li>Follow up by Consultant with County for Permit for Project
+                  </li>
+                  <li>Receive Permit for the Project
+                  </li>
+                </ol>
+                <p style="margin-bottom: 5px;">Exclusions</p>
+                <ol style="padding: 0px 0px 0px 16px;">
+                  <li>Permit Fees not included
+                  </li>
+                  <li>Any other Govt. fees related to Permit, Not Included
+                  </li>
+                </ol>
+                
+                  <input type="checkbox" checked="checked">&nbsp;&nbsp;
+                  <span>I Agree to terms and conditions</span>
+                 
+              
+              </div>
             <button type="submit " class="btn "
-                style="float: right;margin-top: 335px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                style="float: right;margin-top: 300px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
                 (click)="showNextPage()">Click to Pay</button>
         </div>
     </div>
