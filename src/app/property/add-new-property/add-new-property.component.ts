@@ -7,7 +7,7 @@ import { BehavioursubService } from 'src/app/shared/services/behavioursub.servic
 import { Property } from '../property.model';
 import * as data from '../Json/add-property.json';
 import * as data1 from '../Json/project.json';
-
+import * as zipCode from '../Json/zipcode.json';
 @Component({
   selector: 'app-add-new-property',
   templateUrl: './add-new-property.component.html',
@@ -23,12 +23,18 @@ export class AddNewPropertyComponent implements OnInit {
   title1 = "Property Details";
   property: Property;
   selectedUser: string;
+  zipCodes: any;
+  zipCode: any;
+  images:[
+    '../../../assets/Alexandria VA 22312.PNG'
+  ];
 
   constructor(private formBuilder: FormBuilder,
     private validatorService: ValidatorService,
     private router: Router, private readonly toastr: ToastrService,
     private readonly behaviourSubjectService: BehavioursubService) {
     this.isEditProperty = this.behaviourSubjectService.isEditProperty;
+    this.zipCodes = (zipCode as any).default;
   }
 
   ngOnInit() {
@@ -77,7 +83,7 @@ export class AddNewPropertyComponent implements OnInit {
     this.submitForm = true;
     if (this.isEditProperty) {
       var foundItem = this.behaviourSubjectService.properties.findIndex(x => x.id == this.behaviourSubjectService.selectedPropertyToEdit.id);
-      this.behaviourSubjectService.properties[foundItem]=this.propertyForm.value;
+      this.behaviourSubjectService.properties[foundItem] = this.propertyForm.value;
       this.toastr.success('Property updated successfully');
       this.router.navigate(['/property']);
     }
@@ -87,6 +93,14 @@ export class AddNewPropertyComponent implements OnInit {
       this.toastr.success('Property created successfully');
       this.router.navigate(['/property']);
     }
+  }
+
+  onZipCodeChange(ev) {
+    this.zipCode = this.zipCodes.filter(x => x.Zipcode === ev)[0];
+    this.propertyForm.controls['city'].setValue(this.zipCode.City);
+    this.propertyForm.controls['state'].setValue(this.zipCode.state);
+    this.propertyForm.controls['location'].setValue(this.zipCode.Country);
+    this.propertyForm.controls['address1'].setValue(this.zipCode.Address1);
   }
 
 }

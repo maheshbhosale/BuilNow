@@ -18,8 +18,15 @@
                     <div class="form-row">
                         <div class="form-group col-md-6 ">
                             <label for="inputzipCode ">Zip Code</label>
-                            <input formControlName="zipCode" type="text " class="form-control" id="inputzipCode"
-                                placeholder="zipCode" required>
+                            <mat-form-field class="example-full-width">
+                                <input formControlName="zipCode" type="text " class="form-control" id="inputzipCode"
+                                    placeholder="zipCode" required matInput [matAutocomplete]="auto">
+                                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onZipCodeChange($event.option.value)">
+                                    <mat-option *ngFor="let option of zipCodes" [value]="option.Zipcode">
+                                        {{option.Zipcode}}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field>
                             <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                                 *ngIf="!propertyForm.controls['zipCode'].valid && (propertyForm.controls['zipCode']?.touched || submitForm)">
                                 <div *ngIf="propertyForm.controls['zipCode']?.errors.required ">
@@ -44,7 +51,7 @@
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
                             <input [disabled]="Isdisabled" formControlName="city" type="text " class="form-control "
-                                id="inputCity " placeholder="Company name ">
+                                id="inputCity " placeholder="City name ">
                             <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                                 *ngIf="!propertyForm.controls['city'].valid && (propertyForm.controls['city']?.touched || submitForm)">
                                 <div *ngIf="propertyForm.controls['city']?.errors.required ">
@@ -183,8 +190,12 @@
                 <b>
                     <div>Dear,{{selectedUser}},<br>
                         <span>Project location registered as
-                            below</span>,<br><span style="margin-left: 35px;">{{f.address1.value}}</span><br><span style="margin-left: 35px;">{{f.address2.value}}</span><br><span style="margin-left: 35px;">{{f.zipCode.value}}</span><br><span *ngIf=false style="margin-left: 35px;">Telephone
-                        {{f.telephone1.value}} , {{f.telephone2.value}}</span><br><span style="margin-left: 35px;">Tax Map No {{f.tax.value}}</span><br><br>
+                            below</span>,<br><span style="margin-left: 35px;">{{f.address1.value}}</span><br><span
+                            style="margin-left: 35px;">{{f.address2.value}}</span><br><span
+                            style="margin-left: 35px;">{{f.zipCode.value}}</span><br><span *ngIf=false
+                            style="margin-left: 35px;">Telephone
+                            {{f.telephone1.value}} , {{f.telephone2.value}}</span><br><span
+                            style="margin-left: 35px;">Tax Map No {{f.tax.value}}</span><br><br>
 
                     </div>
                     <div class="row">
@@ -202,19 +213,21 @@
                             <span>Soil Types</span>
                         </div>
                         <div class="col-4">
-                            <span>Residential</span><br>
-                            <span>1560 sqft</span><br>
+                            <span>{{zipCode?.Zoning}}</span><br>
+                            <span>{{zipCode?.BuildingArea}} sqft</span><br>
                             <span> {{f.status.value}}</span><br>
                             <span>{{f.topology.value}}</span><br>
                             <span>{{f.buildingArea.value}} sqft</span><br>
-                            <span>IBC 2020</span><br>
-                            <span>20 psf</span><br>
-                            <span>24"</span><br>
-                            <span>115 mph</span><br>
-                            <span>Ss 0.167S10.067</span><br>
-                            <span>D</span><br>
+                            <span>{{zipCode?.BuildingCode}}</span><br>
+                            <span>{{zipCode?.SnowLoad}} psf</span><br>
+                            <span>{{zipCode?.FrostDepth}}"</span><br>
+                            <span>{{zipCode?.WindSpeed}} mph</span><br>
+                            <span>Ss {{zipCode?.Ss}} S1 {{zipCode?.S1}}</span><br>
+                            <span>{{zipCode?.SoilType}}</span><br>
                         </div>
-
+<div class="col-4">
+    <span><img src="../../../assets/Alexandria VA 22312.PNG" alt="Girl in a jacket" width="600" height="300"></span>
+</div>
                     </div>
                 </b>
 
