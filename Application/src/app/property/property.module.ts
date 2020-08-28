@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {PropertyRoutingModule} from './property-routing.module';
+import { PropertyRoutingModule } from './property-routing.module';
 import { RouterModule } from '@angular/router';
 import { PropertyComponent } from './property.component';
 import { AddNewPropertyComponent } from './add-new-property/add-new-property.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectedPropertyComponent } from './selected-property/selected-property.component';
-import {ChoosePropertyComponent} from './choose-property/choose-property.component';
-import {PropertyListComponent} from './property-list/property-list.component';
+import { ChoosePropertyComponent } from './choose-property/choose-property.component';
+import { PropertyListComponent } from './property-list/property-list.component';
+import { BuildPropertyComponent } from './build-property/build-property.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatFormFieldModule,MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,17 +18,21 @@ import {PropertyListComponent} from './property-list/property-list.component';
     AddNewPropertyComponent,
     SelectedPropertyComponent,
     ChoosePropertyComponent,
-    PropertyListComponent
+    PropertyListComponent,
+    BuildPropertyComponent
   ],
   imports: [
     CommonModule,
     PropertyRoutingModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  exports:[
-    
+  exports: [
+
   ]
 })
 export class PropertyModule { }

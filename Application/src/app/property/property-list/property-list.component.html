@@ -1,15 +1,12 @@
 <div class="choose-subaru-header row">
-    <h2 class="title">Choose a <span>Industry</span></h2>
+    <h2 class="title" style="text-align:center;width: 100%;">Selected <span>Industry</span></h2>
     <div class="view-by-container">
         <div class="view-by-links">
-            <span class="view-by-label">View By:</span>
-            <a class="view-by-link disabled">industry</a>
-            <a target="_self" class="view-by-link selected">product</a>
+            <i class="fas fa-chevron-left" style="color: #09F;"> </i>
+           <a routerLink="/property-list" target="_self" class="view-by-link selected"> Show All Industries</a>
         </div>
     </div>
-    <div class="hide-for-large-up text-toggle">
-        <button ng-click="toggleYears()" style="outline: none;"><span ng-bind="yearToggleText">Previous</span> Year</button>
-    </div>
+   
 
 </div>
 <div class="vehicle-cards-container">
@@ -18,7 +15,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/Residential.jpg" style="width: 100%;height: 302px;">
+                <img src="../../assets/Residential.jpg" class="img-fluid res" style="width: 100%;min-height: 100%;">
             </div>
 
             <div class="details columns">
@@ -67,7 +64,7 @@
                         </div>
                         <div class="build large-6 columns">
                             <div>
-                                <button routerLink="/selected-property" class="btn-build">
+                                <button routerLink="/choose-property" class="btn-build">
                                     <span>Build</span>
                                 </button>
                             </div>
@@ -82,7 +79,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/commercial.PNG" style="width: 100%;height: 302px;">
+                <img src="../../assets/commercial.PNG" class="img-fluid com" style="width: 100%;min-height: 100%;">
             </div>
 
             <div class="details columns">
@@ -144,7 +141,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/Hospital.JPG" style="width: 100%;height: 302px;">
+                <img src="../../assets/Hospital.JPG" class="img-fluid hos">
             </div>
 
             <div class="details columns">
@@ -205,7 +202,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/University.jpg" style="width: 100%;height: 302px;">
+                <img src="../../assets/University.jpg" class="img-fluid uni" style="width: 100%;min-height: 100%;">
             </div>
 
             <div class="details columns">
@@ -266,7 +263,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/Retaining Wall.jpg" style="width: 100%;height: 302px;">
+                <img src="../../assets/Retaining Wall.jpg" class="img-fluid" style="width: 100%;height: 302px;">
             </div>
 
             <div class="details columns">
@@ -327,7 +324,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/Parking Structures.JPG" style="width: 100%;height: 302px;">
+                <img src="../../assets/Parking Structures.JPG" class="img-fluid parking" style="width: 100%;height: 302px;">
             </div>
 
             <div class="details columns">
@@ -387,7 +384,7 @@
         <div class="background"></div>
         <div class="vehicle-card-item row">
             <div class="image-slider columns">
-                <img src="../../assets/Hospital.JPG" style="width: 100%;height: 302px;">
+                <img src="../../assets/Hospital.JPG" class="img-fluid hos">
             </div>
 
             <div class="details columns">
