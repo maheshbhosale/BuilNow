@@ -1,17 +1,28 @@
-.line {
-    width: auto;
-    background-color: #dee2e6;
-    height: 1px
+@media only screen and (min-width: 48em){
+    .line {
+      border-right: 2px solid #dee2e6;
+    }
+    }
+    
+    @media only screen and (max-width: 48em){
+      .line {
+          border-bottom: 2px solid #dee2e6;
+          margin-bottom: 10px;
+        }
+    }
+    @media only screen and (max-width: 48em){
+.show{
+    display: none;
 }
-
-.line1 {
-    width: 1px;
-    background-color: #dee2e6;
-    height: auto;
-}
-
+    }
+    @media only screen and (max-width: 48em){
+        select,option {
+            width: 100%; min-width: 100%;
+         }
+      }
 .Head {
     font-size: 18px;
+
     font-weight: bold;
     margin-bottom: 8px;
 }

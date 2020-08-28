@@ -9,9 +9,14 @@
     }
 } */
 
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
     footer {
         bottom: 0px;
         position: absolute;
     }
 }
+body{
+    overflow-x: hidden;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

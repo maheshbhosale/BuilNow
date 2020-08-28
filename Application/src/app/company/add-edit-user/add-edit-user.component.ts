@@ -18,7 +18,8 @@ export class AddEditUserComponent implements OnInit {
   user: CompanyUser;
   isEditUser:boolean;
   title: string = "Create New User";
-  button:string = "Create";
+  title1: string = "User Details";
+  button:string = "Add User";
 
   constructor(private fb: FormBuilder, private router: Router,
     private readonly behaviourSubjectService:BehavioursubService, private toastr: ToastrService) { 
@@ -37,7 +38,7 @@ export class AddEditUserComponent implements OnInit {
 
     if(this.isEditUser){
       this.title = "Update User";
-      this.button = "Update";
+      this.button = "Update User";
       const user =this.behaviourSubjectService.selectedUserToEdit;
       this.registerForm.setValue({
         firstName:user.firstName,
@@ -53,6 +54,8 @@ export class AddEditUserComponent implements OnInit {
   
   showNextPage() {
     if(this.isEditUser){
+      var foundItem = this.behaviourSubjectService.users.findIndex(x => x.id == this.behaviourSubjectService.selectedUserToEdit.id);
+      this.behaviourSubjectService.users[foundItem]=this.registerForm.value;
       this.toastr.success('User updated successfully');
     this.router.navigate(['/company']);
     }
