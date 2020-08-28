@@ -50,7 +50,7 @@
 
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
-                            <input [disabled]="Isdisabled" formControlName="city" type="text " class="form-control "
+                            <input formControlName="city" type="text " class="form-control "
                                 id="inputCity " placeholder="City name ">
                             <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
                                 *ngIf="!propertyForm.controls['city'].valid && (propertyForm.controls['city']?.touched || submitForm)">
@@ -113,8 +113,8 @@
                         <div class="form-group col-md-6 ">
                             <label for="inputTax ">Tax Map No</label>
                             <input type="text " class="form-control " id="inputTax" placeholder="Tax Map No"
-                                formControlName="tax" [ngClass]="{ 'is-invalid': submitted && f.tax.errors }" />
-                            <div *ngIf="submitted && f.tax.errors" class="invalid-feedback">
+                                formControlName="tax" [ngClass]="{ 'is-invalid': f.tax.errors }" />
+                            <div *ngIf="f.tax.errors" class="invalid-feedback">
                                 <div *ngIf="f.tax.errors.required">Tax Map No is required</div>
                             </div>
                         </div>
