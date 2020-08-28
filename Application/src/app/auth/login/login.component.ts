@@ -39,13 +39,13 @@ export class LoginComponent implements OnInit {
       if (this.loginForm.value.email == "buildnow@gmail.com" && this.loginForm.value.password == "Abc@123") {
 
         localStorage.setItem("Id", "1");
-        localStorage.setItem("Name", "Mahesh Bhosale");
+        localStorage.setItem("Name", "John Smith");
         this.toastr.success('login succesfullly !!!', 'Welcome');
         this.loginForm.reset();
         this.errormessage = true;
         this.submitForm = false;
 
-        this.behaviourSubjectService.SendUserDataToHeader({ "Id": 1, "Name": "Mahesh Bhosale" })
+        this.behaviourSubjectService.SendUserDataToHeader({ "Id": 1, "Name": "John Smith" })
         this.router.navigate(['/company']);
       } else {
         this.toastr.error('Sorry !', 'username & password incorrect');

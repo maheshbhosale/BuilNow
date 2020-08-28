@@ -27,10 +27,17 @@
     margin-bottom: 8px;
 }
 
-input.ng-invalid.ng-touched {
+/* input.ng-invalid.ng-touched {
     border: 1px solid red;
 }
 
 input.ng-valid.ng-touched {
     border: 1px solid green;
-}
+} */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.4em 0 0.4em 0 !important;
+    top: 0.25em;
+    outline: none;
+   border: none;
+  }
+  

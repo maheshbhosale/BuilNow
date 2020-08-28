@@ -222,7 +222,7 @@ button span {
     background-repeat: no-repeat;
 }
 .preview-background .image-container {
-    background-image: url(../../../assets/bkground.jpg);
+    background-image: url(../../../assets/background.jpg);
 }
 .preview-viewport {
     height: 100%;
@@ -746,7 +746,6 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     border: 2px solid #fff;
     position: relative;
     text-align: center;
