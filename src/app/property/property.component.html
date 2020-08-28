@@ -10,28 +10,27 @@
             <div class="col-xs-12 col-sm-5 col-md-5 card" *ngFor="let property of properties; let i = index">
                 <p style="font-weight: bold;margin: 0;padding: 0px 0px 3px 0px;border-bottom: 1px solid black;">
                     Property#{{i+1}} Details</p>
-                
-                <div style="font-weight: bold;font-size: 12px;">                   
+
+                <div style="font-weight: bold;font-size: 12px;">
 
                     <div class="row">
-                        <div class="col-6">
-                            <span style="font-weight: bold;font-size: 12px;margin-top: 5px;">Dear {{selectedUser}}</span>
+                        <div class="col-6" style="padding-right: 0;">
+                            <span style="font-weight: bold;font-size: 12px;margin-top: 5px;">Dear
+                                {{selectedUser}}</span><br>
                             <span>Project location registered as below,</span><br>
                             <span style="font-weight: bold;font-size: 12px;margin-left: 35px;">{{property.address1}}<br>
-                                <span style="margin-left: 35px;">{{property.address2}}</span> <br> <span
-                                    style="margin-left: 35px;">{{property.zipCode}}</span><br>
+                                <span style="margin-left: 35px;">{{property.address2}}</span> <br>
+                                <span style="margin-left: 35px;">{{property.zipCode}}</span>
                             </span>
-                            <span *ngIf=false style="font-weight: bold;font-size: 12px;margin-left: 35px;">Telephone
-                                {{property.telephone1}}</span><br>
-                            <span style="font-weight: bold;font-size: 12px;margin-left: 35px;">Tax Map No
-                                {{property.tax}}</span><br>
                         </div>
                         <div class="col-6">
-                           <img src="../../assets/Alexandria VA 22312.PNG" alt="Girl in a jacket" style="width:100%; height:126px">
+                            <img src="../../assets/Alexandria VA 22312.PNG" alt="Girl in a jacket"
+                                style="width:100%; height:126px;border: 1px solid gray;">
                         </div>
                     </div>
 
-
+                    <span style="font-weight: bold;font-size: 12px;">Tax Map No
+                        {{property.tax}}</span><br>
                     <span style="font-weight: bold;font-size: 12px;">Current Zoning</span><span
                         style="font-weight: bold;font-size: 12px;margin-left: 155px;">Residential</span><br>
                     <span style="font-weight: bold;font-size: 12px;">Maximum Area to be Built in Lot</span><span
