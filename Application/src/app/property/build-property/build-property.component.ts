@@ -31,16 +31,16 @@ export class BuildPropertyComponent implements OnInit {
         $(target).show();
       });
       $(".front").click(function () {
-        $('img').attr("src", "../../assets/front.png");
+        $('.image').attr("src", "../../assets/front.png");
       });
       $(".angle").click(function () {
-        $('img').attr("src", "../../assets/isoright.png");
+        $('.image').attr("src", "../../assets/isoright.png");
       });
       $(".side").click(function () {
-        $('img').attr("src", "../../assets/isoleft.png");
+        $('.image').attr("src", "../../assets/isoleft.png");
       });
       $(".back").click(function () {
-        $('img').attr("src", "../../assets/isoback.png");
+        $('.image').attr("src", "../../assets/isoback.png");
       });
     });
 
