@@ -641,6 +641,7 @@ h3{
     color: #666;
     opacity: 1;
     transition: opacity .2s;
+    right: 45px;
 }
 .transmissionBtn.btn-add button {
     background-color: #fff;
@@ -674,6 +675,122 @@ h3{
 .build-options h3 {
     font-size: 36px;
     font-weight: normal;
+}
+@media only screen and (min-width: 48em){
+.colorpicker-everything {
+    margin-bottom: 35px;
+}
+}
+@media only screen and (min-width: 48em){
+.build-options h4 {
+    font-size: .875rem;
+    margin-bottom: 16px;
+}
+}
+h4{
+    color: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    margin-top: .2rem;
+}
+@media only screen and (min-width: 48em){
+    h4{
+        line-height: 1.4;
+    }
+}
+@media only screen and (min-width: 48em){
+.colorpicker-scroll-wrap {
+    margin-bottom: 25px;
+    max-width: none;
+}
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+@media only screen and (min-width: 48em){
+.colorpicker-wrap {
+    max-width: 100%;
+}
+}
+.colorpicker-wrap {
+    min-width: 100%;
+}
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colorpicker.light-checkmark {
+    color: #fff;
+}
+@media only screen and (min-width: 48em){
+.colorpicker {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+}
+.colorpicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 0 1px #fff;
+    background-size: 70px;
+    background-position: 50% 50%;
+}
+[class*=" icon-"], .byoicon {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+@media only screen and (min-width: 48em){
+.colorpicker:before {
+    line-height: 55px;
+}
+}
+.colorpicker:before {
+    width: 100%;
+    left: 0;
+    font-size: 9px;
+    opacity: 0;
+}
+/* .icon-checkmark:before {
+    content: "\e633";
+} */
+.colorpicker-everything h4 span {
+    display: block;
+}
+.build-options h4 span {
+    font-weight: bolder;
+}
+.build-options h4 span {
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 48em){
+.build-options h4 {
+    font-size: .875rem;
+}
 }
 @media only screen and (min-width: 48em){
     footer {

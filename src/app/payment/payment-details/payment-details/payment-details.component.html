@@ -1,24 +1,45 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 
         <!-- First half -->
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
-            <b><p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Details</p></b>
-            
+            <b>
+                <p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Details</p>
+            </b>
+            <div style="text-align: center;margin-top: 35%;color: green;">
+                <i class="far fa-check-circle" style="text-align: center;font-size: 120px;"></i>
+                <h3 style="margin-top: 10px;margin-bottom: 0;">Payment</h3>
+                <h3 style="margin: 0;">Successful</h3>
+                <h5 style="margin: 0;color: gray;">Your transaction reference is</h5>
+                <h5 style="margin: 0;color: gray;">abcdefgh</h5>
+            </div>
         </div>
 
         <!-- Second Half -->
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <b><p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Confirmation Details</p></b>
-            <div style="font-size: 14px;">
+            <b>
+                <p class="Head" style="border-bottom: 2px solid #dee2e6;">Payment Confirmation Details</p>
+            </b>
+            <div>
 
-                <p>Dear <b>{{selectedUser}},</b></p>
-                <p>Payment Amount<b>$21,600</b> for your Order No. 000-000 is successful</p><br><br>
-                <p>Order: <b>Single Family Detached House 1,150 sq.ft, A & E Permit,</b></p>
+                <p style="margin-bottom: 3px;">Dear <b>{{selectedUser}},</b></p>
+                <p style="margin-bottom: 3px;">Payment Amount <b>$21,600</b> for your Order No. 000-000 is successful</p><br>
+                <p style="margin-bottom: 3px;">Order: <b>Single Family Detached House 1,150 sq.ft, A & E Permit,</b></p>
+                <p style="margin-bottom: 3px;"><b>Standard Package </b>with Customizations <b>External finishing: Cement Board</b></p><br>
+                <p style="margin-bottom: 3px;"><b>Project Location</b></p>
+                <p style="margin-bottom: 3px;margin-left: 35px;"><b>11480 Sunset Hills Road</b></p>
+                <p style="margin-bottom: 3px;margin-left: 35px;"><b>Reston, Virginia, United States</b></p>
+                <p style="margin-bottom: 3px;margin-left: 35px;"><b>20190</b></p><br>
+                <p style="margin-bottom: 3px;"><b>Architectural Consultant:</b></p>
+                <p style="margin-bottom: 3px;">ABC Architects, 2011, Michael Faraday Road, Reston, VA +1 (703) 841 2100</p>
+                <p style="margin-bottom: 3px;"><b>Structural Consultant:</b></p>
+                <p style="margin-bottom: 3px;">ABC Engineers, 1123, Mclean Road, Reston, VA +1 (703) 841 2100</p>
+                <p style="margin-bottom: 3px;"><b>MEP Consultant:</b></p>
+                <p style="margin-bottom: 3px;">ABC MEP Engineers, 546, Sunset Hills Road, Reston, VA +1 (703) 841 2100</p>
             </div>
             <button type="submit " class="btn "
-                style="float: right;margin-top: 335px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
-                (click)="showNextPage()">Click to Pay</button>
+                style="float: right;margin-top: 245px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                (click)="showNextPage()">Print Order</button>
         </div>
     </div>
 </div>

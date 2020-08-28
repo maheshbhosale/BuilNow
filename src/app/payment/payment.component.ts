@@ -12,7 +12,7 @@ export class PaymentComponent implements OnInit {
   handler: any = null;
 
   constructor(private router: Router, private readonly toastr: ToastrService) { }
-  
+
   ngOnInit() {
     this.selectedUser = localStorage.getItem('Name');
     this.loadStripe();
@@ -22,11 +22,8 @@ export class PaymentComponent implements OnInit {
     var handler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51HHnw5DvUDPuOCevAPpKjHzCJ4BABijTAwQpQvCGN8ilmpsQrHf4qMzMqHhiS0LhAIh0ihsoi7VbwKq4bcGCjH2n00fYycPNiQ',
       locale: 'auto',
-      token: function (token: any) {
-        // You can access the token ID with `token.id`.
-        // Get the token ID to your server-side code for use.
-        console.log(token)   ;
-        alert("Payment Successful!!");     
+      source: () => {
+        this.onClose();
       }
     });
 
@@ -35,8 +32,11 @@ export class PaymentComponent implements OnInit {
       description: '2 widgets',
       amount: 2160000
     });
-    // this.toastr.success('Payment Successful!!');
-    // this.router.navigate(['/payment-details']);
+  }
+
+  onClose() {
+    this.toastr.success('Payment Successful!!');
+    this.router.navigate(['/payment-details']);
   }
 
   loadStripe() {
