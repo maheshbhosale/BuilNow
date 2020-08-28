@@ -13,6 +13,7 @@ import { RegistrationComponent } from './auth/registration/registration.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PropertyModule } from './property/property.module';
 import { PaymentModule } from './payment/payment.module';
+import { OrderModule } from './order/order.module'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PaymentModule } from './payment/payment.module';
     ToastrModule.forRoot(), // ToastrModule added
     BrowserAnimationsModule,
     PropertyModule,
-    PaymentModule
+    PaymentModule,
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

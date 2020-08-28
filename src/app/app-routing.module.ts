@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'payment',
     loadChildren: () => import('./payment/payment.module').then(mod => mod.PaymentModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then(mod => mod.OrderModule)
   }
 ];
 
