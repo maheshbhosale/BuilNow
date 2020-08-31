@@ -1,0 +1,781 @@
+<body>
+	<div class="customize-header third_layer_animated-wrapper third_nav-fixed navbar">
+		<div class="customize-header-bg"></div>
+		<div class="title">
+			<h1>
+				<span>Build &amp; Price </span>
+				<span>432 sqft</span><br>
+				<span>Single Family Detached House</span>
+			</h1>
+			<div class="topbar-button btn-change-vehicle">
+				<button routerLink="/selected-property" global-modal-button="" content="change-vehicle-content"
+					class="ng-isolate-scope" style="outline: none;">
+					<span>CHANGE BUILDING</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="buttons">
+
+			<div class="topbar-button btn-standard">
+				<button (click)="openStandardModal()" content="standard-features-content" class="ng-isolate-scope"
+					style="outline: none;">
+					<span>STANDARD FEATURES</span>
+				</button>
+			</div>
+
+		</div>
+	</div>
+	<div class="vehicle-preview">
+		<div class="preview-container">
+			<div class="fade selected preview-exterior">
+				<div class="preview-background">
+					<style class="ng-binding">
+						.preview-background .image-container {
+							background-image: url(../../assets/background.jpg);
+						}
+					</style>
+					<div class="image-container"></div>
+				</div>
+				<div class="preview-viewport">
+					<div class="vehicle-configured-wrap ng-scope colorShown">
+						<div class="vehicle-configured ng-scope">
+							<img src="../../assets/isoright.png" class="image">
+							<!-- style="height: 600px;" -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="preview-footer-container exterior" id="content">
+			<div class="content-foot" id="pilot">
+				<ul>
+					<li>
+						<span class="active listitem1" id="btn1" data-target="pilot">Exterior</span>
+					</li>
+					<li>
+						<span class="listitem2" id="btn2" data-target="design">Interior</span>
+					</li>
+					<li class="separator"><span></span></li>
+					<li class="ng-scope">
+						<span class="ng-binding ext act front">front</span>
+					</li>
+					<li class="ng-scope">
+						<span class="ng-binding ext act active angle">angle</span>
+					</li>
+					<li class="ng-scope">
+						<span class="ng-binding ext act side">side</span>
+					</li>
+					<li class="ng-scope">
+						<span class="ng-binding ext act back">back</span>
+					</li>
+				</ul>
+			</div>
+			<div class="content-foot" id="design" style="display: none;">
+				<ul>
+					<li>
+						<span class="listitem1" id="btn1" data-target="pilot">Exterior</span>
+					</li>
+					<li>
+						<span class="active listitem2" id="btn2" data-target="design">Interior</span>
+					</li>
+					<li class="separator"><span></span></li>
+					<li class="ng-scope">
+						<span class="ng-binding int apply">dash</span>
+					</li>
+					<li class="ng-scope">
+						<span class="ng-binding int apply active">side</span>
+					</li>
+					<li class="ng-scope">
+						<span class="ng-binding int apply">back</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div stacked="buildPanelIsStacked" closed="buildPanelIsClosed" selected-view="selectedView"
+		class="exterior vehicle-build" vehicle-area-width="vehicleAreaWidth" show-module="showPanel"
+		focus-view-id="view885" style="top: 0px; display: block; height: auto; width: auto;">
+		<div class="build-panel" style="top: 98px;">
+			<div class="build-options">
+				<!-- <div ng-controller="BeginBuild" class="ng-scope">
+					<div id="beginBuildButton" ng-click="beginBuild()">Start Your Build
+						<span class="beginBuildImage"></span>
+					</div>
+				</div> -->
+				<div id="transmission-chooser"
+					class="transmission-options-container config-area-section customize-addon-items">
+					<div class="row clearfix heading">
+						<h3 class="left">Optional</h3>
+					</div>
+					<div class="accessories-wrapper clearfix">
+						<div>
+							<div ng-repeat="transmission in transmissions" class="ng-scope">
+								<div class="accessory-item columns small-12 medium-4">
+									<div class="transmission-item-content selected"
+										ng-class="{'selected': data.selected}">
+										<div class="green-stroke selected" ng-class="{'selected': data.selected}">
+										</div>
+										<div class="image-wrap">
+
+										</div>
+										<div class="info-wrap">
+											<div class="accessory-name-wrap">
+												<div class="accessory-name">Additional Bed Room<div
+														data-id="TRA-2020-IMP-LJA-5MT1"
+														data-cdnpath="https://secure-akns.subaru.com"
+														data-xmlpath="https://secure-akns.subaru.com"
+														data-rel="/content/galleries/mp_xml/gallery_TRA-2020-IMP-LJA-5MT.xml"
+														class="galleryTRA-2020-IMP-LJA-5MT gallery_container SubaruByoTransmission galleryTRA-2020-IMP-LJA-5MT1 single_item"
+														data-gallerytype="SubaruByoTransmission"
+														id="galleryTRA-2020-IMP-LJA-5MT1" data-title="Manual 5-speed"
+														data-gallerycount="1" data-original-id="TRA-2020-IMP-LJA-5MT"
+														data-gallerycreated="1" tabindex="TRA-2020-IMP-LJA-5MT1"
+														data-selected-mediatype="image">
+														<div class="gallery_slideshow_container noselect"
+															style="height: 40px;">
+															<div class="item_container">
+																<div class="gallery_TRA-2020-IMP-LJA-5MT1_image_0 media_holder noselect"
+																	data-id="0" data-index="0"
+																	style="left: 0px; opacity: 1;"></div>
+															</div>
+															<div class="nav_controls_container">
+																<div class="nav_video_icon hide"></div>
+																<div class="nav_info_icon"></div>
+															</div>
+															<div class="left_arrow disabled" style="display: none;">
+																<div class="icon"></div>
+															</div>
+															<div class="right_arrow disabled" style="display: none;">
+																<div class="icon"></div>
+															</div>
+															<div class="gallery_info_cover"></div>
+															<div class="gallery_TRA-2020-IMP-LJA-5MT1_cover gallery_cover"
+																style="display: none;">
+																<div class="spinner" role="progressbar"
+																	style="position: relative; width: 0px; z-index: 2000000000; left: 0px; top: 0px;">
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-0-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(0deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-1-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(36deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-2-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(72deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-3-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(108deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-4-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(144deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-5-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(180deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-6-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(216deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-7-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(252deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-8-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(288deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-9-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(324deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="gallery_promo_container noselect"></div>
+													</div>
+												</div>
+												<div class="accessory-info-link"></div>
+											</div>
+
+											<div class="info">
+												<div add-item="transmission" add-type="transmissions" data="data"
+													class="ng-isolate-scope add-customize-item">
+													<div class="bottom-bar bottom-bar-add clearfix no-price standard"
+														ng-class="{'no-price standard': (type == 'transmissions' &amp;&amp; item.msrp == 0) || type == 'subscriptionlist'}">
+														<span class="price ng-binding ng-scope"
+															ng-if="type != 'subscriptionlist'">$0<span
+																class="carat ng-binding"></span></span>
+
+														<div data="data" class="ng-isolate-scope add-item-button">
+															<div class="btn-add transmissionBtn selected disabled required oneSelect"
+																ng-class="{'selected': data.selected, 'disabled': !data.enabled, 'required': !data.enabled, 'oneSelect': data.selected, mobileSelected : data.isMobile ? !data.mobileSelected : false}">
+																<button disabled class="btn-round add fas fa-check"
+																	ng-click="toggle($event)"><i
+																		class="fas fa-check"></i></button>
+																<span class="item-status ng-binding"
+																	ng-bind-html="data.text">standard</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div ng-repeat="transmission in transmissions" class="ng-scope">
+								<div class="accessory-item columns small-12 medium-4">
+									<div class="transmission-item-content" ng-class="{'selected': data.selected}">
+										<div class="green-stroke" ng-class="{'selected': data.selected}"></div>
+										<div class="image-wrap">
+
+										</div>
+										<div class="info-wrap">
+											<div class="accessory-name-wrap">
+												<div class="accessory-name">Additional Sun Room
+													<div data-id="TRA-2020-IMP-LJA-CVT4"
+														data-cdnpath="https://secure-akns.subaru.com"
+														data-xmlpath="https://secure-akns.subaru.com"
+														data-rel="/content/galleries/mp_xml/gallery_TRA-2020-IMP-LJA-CVT.xml"
+														class="galleryTRA-2020-IMP-LJA-CVT gallery_container SubaruByoTransmission galleryTRA-2020-IMP-LJA-CVT4 single_item"
+														data-gallerytype="SubaruByoTransmission"
+														id="galleryTRA-2020-IMP-LJA-CVT4"
+														data-title="Automatic Lineartronic<sup>&amp;reg;</sup> CVT"
+														data-gallerycount="4" data-original-id="TRA-2020-IMP-LJA-CVT"
+														data-gallerycreated="1" tabindex="TRA-2020-IMP-LJA-CVT4"
+														data-selected-mediatype="image">
+														<div class="gallery_slideshow_container noselect"
+															style="height: 40.625px;">
+															<div class="item_container">
+																<div class="gallery_TRA-2020-IMP-LJA-CVT4_image_0 media_holder noselect"
+																	data-id="0" data-index="0"
+																	style="left: 0px; opacity: 1;"></div>
+															</div>
+															<div class="nav_controls_container">
+																<div class="nav_video_icon hide"></div>
+																<div class="nav_info_icon"></div>
+															</div>
+															<div class="left_arrow disabled" style="display: none;">
+																<div class="icon"></div>
+															</div>
+															<div class="right_arrow disabled" style="display: none;">
+																<div class="icon"></div>
+															</div>
+															<div class="gallery_info_cover"></div>
+															<div class="gallery_TRA-2020-IMP-LJA-CVT4_cover gallery_cover"
+																style="display: none;">
+																<div class="spinner" role="progressbar"
+																	style="position: relative; width: 0px; z-index: 2000000000; left: 0px; top: 0px;">
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-0-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(0deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-1-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(36deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-2-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(72deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-3-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(108deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-4-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(144deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-5-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(180deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-6-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(216deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-7-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(252deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-8-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(288deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																	<div
+																		style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-100-25-9-10;">
+																		<div
+																			style="position: absolute; width: 12px; height: 4px; background: white; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(324deg) translate(8px, 0px); border-radius: 2px;">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="gallery_promo_container noselect"></div>
+													</div>
+												</div>
+												<div class="accessory-info-link"></div>
+											</div>
+
+											<div class="info">
+												<div add-item="transmission" add-type="transmissions" data="data"
+													class="ng-isolate-scope add-customize-item">
+													<div class="bottom-bar bottom-bar-add clearfix"
+														ng-class="{'no-price standard': (type == 'transmissions' &amp;&amp; item.msrp == 0) || type == 'subscriptionlist'}">
+														<span class="price ng-binding ng-scope"
+															ng-if="type != 'subscriptionlist'">$1,300<span
+																class="carat ng-binding"></span></span>
+														<div data="data" class="ng-isolate-scope add-item-button">
+															<div class="btn-add transmissionBtn"
+																ng-class="{'selected': data.selected, 'disabled': !data.enabled, 'required': !data.enabled, 'oneSelect': data.selected, mobileSelected : data.isMobile ? !data.mobileSelected : false}">
+																<button routerLink="/additionalsunroom1"
+																	class="btn-round add byoicon"
+																	ng-click="toggle($event)"
+																	style="outline: none;"></button>
+																<span class="item-status ng-binding"
+																	ng-bind-html="data.text">select</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="colorpicker-container config-area-section" id="color-chooser">
+					<h3>Colors</h3>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="exteriorColors"
+						color-title="'Exterior'" model="model" selected-view="selectedView"
+						select-color="selectExteriorColor(color)">
+						<h4><span class="ng-binding">Exterior - Walls </span></h4>
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 490px; transform: translate3d(0px, 0px, 0px);">
+
+								<div class="color-list">
+									<!-- ngRepeat: color in colors -->
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#0d0d0b'}"
+										ng-click="_selectColor(color, $event)" data-color="D4S"
+										style="background-image: url(&quot;&quot;); background-color: rgb(245, 219, 105)">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#5b5e64'}"
+										ng-click="_selectColor(color, $event)" data-color="P8Y"
+										style="background-image: url(&quot;&quot;); background-color: rgb(243, 140, 22);">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark dark-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#dfdfdf'}"
+										ng-click="_selectColor(color, $event)" data-color="G1U"
+										style="background-image: url(&quot;&quot;); background-color: rgb(168, 106, 112);">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#710e18'}"
+										ng-click="_selectColor(color, $event)" data-color="M1Y"
+										style="background-image: url(&quot;&quot;); background-color: rgb(223, 223, 223);">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="interiorColors"
+						color-title="'Interior'" model="model" selected-view="selectedView"
+						select-color="selectInteriorColor(color)">
+						<h4><span class="ng-binding">Exterior - Roofs</span></h4>
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 140px; transform: translate3d(0px, 0px, 0px);">
+
+								<div class="color-list">
+									<!-- ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark unavailable light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#008000'}"
+										ng-click="_selectColor(color, $event)" data-color="BC"
+										style="background-image: url(&quot;&quot;); background-color: rgb(156, 120, 109);">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#FFFF00'}"
+										ng-click="_selectColor(color, $event)" data-color="IC"
+										style="background-image: url(&quot;&quot;); background-color: #743522;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#710e18'}"
+										ng-click="_selectColor(color, $event)" data-color="IC"
+										style="background-image: url(&quot;&quot;); background-color: #710e18;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#FF69B4'}"
+										ng-click="_selectColor(color, $event)" data-color="IC"
+										style="background-image: url(&quot;&quot;); background-color: #21291b;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div>
+									</div><!-- end ngRepeat: color in colors -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="colorpicker-container config-area-section" id="color-chooser">
+					<h3>Finishes</h3>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="exteriorColors"
+						color-title="'Exterior'" model="model" selected-view="selectedView"
+						select-color="selectExteriorColor(color)">
+						<h4><span class="ng-binding">Exterior - Walls </span></h4>
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 490px; transform: translate3d(0px, 0px, 0px);">
+
+								<div class="color-list">
+									<!-- ngRepeat: color in colors -->
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url(../../../assets/cement board.PNG)', 'background-color': '#0d0d0b'}"
+										ng-click="_selectColor(color, $event)" data-color="D4S"
+										style="background-image: url('../../../assets/cement board.PNG'); background-color: rgb(13, 13, 11);background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;margin-bottom: 0px;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/cement board.PNG">
+
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url(../../../assets/osb.PNG)', 'background-color': '#5b5e64'}"
+										ng-click="_selectColor(color, $event)" data-color="P8Y"
+										style="background-image: url('../../../assets/osb.PNG'); background-color: rgb(91, 94, 100);background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/osb.PNG">
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors" class="colorpicker icon-checkmark light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#245f9e'}"
+										ng-click="_selectColor(color, $event)" data-color="TAQ"
+										style="background-image: url(&quot;&quot;); background-color: rgb(36, 95, 158);background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/plywood.PNG">
+									</div><!-- end ngRepeat: color in colors -->
+								</div>
+								<div style="display: flex;flex-wrap: wrap;">
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 7px;text-align: center;font-size: 13px;">
+										Cement Board</div>
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 60px;text-align: center;font-size: 13px;">
+										OSB</div>
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 80px;text-align: center;font-size: 13px;">
+										Plywood</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="interiorColors"
+						color-title="'Interior'" model="model" selected-view="selectedView"
+						select-color="selectInteriorColor(color)">
+						<h4><span class="ng-binding">Interior - Walls</span></h4>
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 140px; transform: translate3d(0px, 0px, 0px);">
+
+								<div class="color-list">
+									<!-- ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark unavailable light-checkmark"
+										ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#008000'}"
+										ng-click="_selectColor(color, $event)" data-color="BC"
+										style="background-image: url(&quot;&quot;); background-color: #008000;background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/cement board.PNG">
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#FFFF00'}"
+										ng-click="_selectColor(color, $event)" data-color="IC"
+										style="background-image: url(&quot;&quot;); background-color: #FFFF00;background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/osb.PNG">
+									</div><!-- end ngRepeat: color in colors -->
+									<div ng-repeat="color in colors"
+										class="colorpicker icon-checkmark selected light-checkmark" ng-hide="color.hide"
+										ng-class="{'selected': color.selected, 'unavailable': color.available == false, 'color-load': color.loadingAssets }"
+										ng-style="{'background-image': 'url()', 'background-color': '#710e18'}"
+										ng-click="_selectColor(color, $event)" data-color="IC"
+										style="background-image: url(&quot;&quot;); background-color: #710e18;background: no-repeat;border-style: none;height: 100px;width: 100px;border-radius: 0;box-shadow: none;">
+										<div class="dot-loading">
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+											<div class="load-dot"></div>
+										</div><img src="../../../assets/plywood.PNG">
+									</div><!-- end ngRepeat: color in colors -->
+
+								</div>
+								<div style="display: flex;flex-wrap: wrap;">
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 7px;text-align: center;font-size: 13px;">
+										Cement Board</div>
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 60px;text-align: center;font-size: 13px;">
+										OSB</div>
+									<div
+										style="color: #fff;margin: 0;padding: 0;margin-left: 80px;text-align: center;font-size: 13px;">
+										Plywood</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="colorpicker-container config-area-section" id="color-chooser">
+					<h3>Kitchen Furniture</h3>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="exteriorColors"
+						color-title="'Exterior'" model="model" selected-view="selectedView"
+						select-color="selectExteriorColor(color)">
+
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 490px; transform: translate3d(0px, 0px, 0px);">
+
+								<div style="display: flex;">
+									<!-- ngRepeat: color in colors -->
+									<div style="background: no-repeat;box-shadow: none;margin-right: 30px;">
+										<img src="../../../assets/typicalkitchen.PNG"
+											style="width: 100%;border:2px solid #fff;">
+
+									</div><!-- end ngRepeat: color in colors -->
+									<div style="color: #fff;float: left;">
+										<p style="margin-top: 10px;">Contemporary</p>
+										<p>$12,000</p>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div id="color-chooser" class="colorpicker-everything ng-isolate-scope" colors="exteriorColors"
+						color-title="'Exterior'" model="model" selected-view="selectedView"
+						select-color="selectExteriorColor(color)">
+
+						<div>
+
+							<div class="colorpicker-wrap" ng-style="{'width': colorContainerSize}" ng-swipe-right=""
+								style="width: 490px; transform: translate3d(0px, 0px, 0px);">
+
+								<div style="display: flex;">
+									<!-- ngRepeat: color in colors -->
+									<div style="background: no-repeat;box-shadow: none;margin-right: 30px;">
+										<img src="../../../assets/typicalkitchen.PNG"
+											style="width: 100%;border:2px solid #fff;">
+
+									</div><!-- end ngRepeat: color in colors -->
+									<div style="color: #fff;float: left;">
+										<p style="margin-top: 10px;">Modern</p>
+										<p>$15,000</p>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<footer show="showFooter" width="panelWidth" class="ng-isolate-scope"
+				style="bottom: 0px; width: 50%; visibility: visible;">
+				<section ng-class="{'full-car-modal-visible': showFullCarModal === true}">
+					<div class="total-price-bar">
+
+						<div class="calculator small-6 medium-6 columns">
+							<div class="price">
+								<div class="total-text">TOTAL</div>
+								<div class="num"><span class="sign">$</span>
+									<div class="animated-number odometer odometer-auto-theme" style="margin-top:-4px;">
+										<div class="odometer-inside"><span class="odometer-digit"><span
+													class="odometer-digit-spacer">8</span><span
+													class="odometer-digit-inner"><span class="odometer-ribbon"><span
+															class="odometer-ribbon-inner"><span
+																class="odometer-value">1</span></span></span></span></span><span
+												class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+													class="odometer-digit-inner"><span class="odometer-ribbon"><span
+															class="odometer-ribbon-inner"><span
+																class="odometer-value">9</span></span></span></span></span><span
+												class="odometer-formatting-mark">,</span><span
+												class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+													class="odometer-digit-inner"><span class="odometer-ribbon"><span
+															class="odometer-ribbon-inner"><span
+																class="odometer-value">5</span></span></span></span></span><span
+												class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+													class="odometer-digit-inner"><span class="odometer-ribbon"><span
+															class="odometer-ribbon-inner"><span
+																class="odometer-value">9</span></span></span></span></span><span
+												class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+													class="odometer-digit-inner"><span class="odometer-ribbon"><span
+															class="odometer-ribbon-inner"><span
+																class="odometer-value">5</span></span></span></span></span>
+										</div>
+									</div>*
+								</div>
+								<button class="btn-calculate ng-isolate-scope" global-modal-button=""
+									content="calculate-payment-content">
+									<i class="fas fa-calculator"
+										style="color: #09f;line-height: 12px;font-size: 1.4rem;"></i>
+								</button>
+							</div>
+
+						</div>
+						<div class="std-container small-6 medium-2 columns">
+							<button class="std-btn ng-isolate-scope virtual" global-modal-button=""
+								content="raq-content" parameter="std" style="outline: none;">Virtual Tour <span
+									style="visibility: hidden;">Drive</span></button>
+						</div>
+						<div class="btn-find-subaru small-6 medium-4 columns">
+							<button routerLink="/payment" global-modal-button="" content="raq-content" parameter="raq"
+								class="ng-isolate-scope" style="outline: none;">GET A LOCAL PRICE</button>
+						</div>
+					</div>
+				</section>
+			</footer>
+			<div ui-view="build-closable-panel" class="ng-scope"></div>
+		</div>
+	</div>
+</body>

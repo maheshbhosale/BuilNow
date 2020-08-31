@@ -1,0 +1,25 @@
+.card {
+    border: 2px dashed gray;
+    transition: 0.3s;
+    border-radius:20px;
+    margin-left: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  h2{
+    border-bottom: 1px solid black;
+    padding: 6px 0px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  i{
+      text-align: center;
+      padding: 80px 0px 10px 0px;
+      font-size: 100px;
+  }
+  btn{
+      height: auto;
+  }

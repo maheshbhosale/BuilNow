@@ -1,0 +1,43 @@
+@media only screen and (min-width: 48em){
+    .line {
+      border-right: 2px solid #dee2e6;
+    }
+    }
+    
+    @media only screen and (max-width: 48em){
+      .line {
+          border-bottom: 2px solid #dee2e6;
+          margin-bottom: 10px;
+        }
+    }
+    @media only screen and (max-width: 48em){
+.show{
+    display: none;
+}
+    }
+    @media only screen and (max-width: 48em){
+        select,option {
+            width: 100%; min-width: 100%;
+         }
+      }
+.Head {
+    font-size: 18px;
+
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid green;
+} */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.4em 0 0.4em 0 !important;
+    top: 0.25em;
+    outline: none;
+   border: none;
+  }
+  

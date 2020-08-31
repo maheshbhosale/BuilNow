@@ -1,0 +1,21 @@
+@media only screen and (min-width: 48em){
+    .line {
+      border-right: 2px solid #dee2e6;
+    }
+    }
+    
+    @media only screen and (max-width: 48em){
+      .line {
+          border-bottom: 2px solid #dee2e6;
+          margin-bottom: 10px;
+        }
+    }
+    
+    .Head {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    input:checked ~ .checkmark {
+  background-color: pink;
+}

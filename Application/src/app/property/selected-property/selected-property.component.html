@@ -1,0 +1,68 @@
+<div class="choose-subaru-header row">
+    <h2 class="title " style="text-align:center;width: 100%;">Selected <span>Industry</span></h2>
+    
+    <div class="view-by-container" routerLink="/property-list" style="outline: none;">
+        
+        <div class="view-by-links">
+            <i class="fas fa-chevron-left" style="color: #09F;"> </i>
+           <a target="_self" class="view-by-link selected"> Show All Industries</a>
+        </div>
+    </div>
+    
+
+</div>
+<div class="vehicle-cards-container">
+    <div class="vehicle-card-item-wrap"
+        ng-init="modelIMP = {'highlights':[],'awards':[],'code':'IMP','year':2020,'name':'Impreza'}">
+        <div class="background"></div>
+        <div class="vehicle-card-item row">
+            <div class="image-slider columns">
+                <img src="../../assets/Residential.jpg" class="img-fluid res" style="width: 100%;min-height: 100%;">
+            </div>
+
+            <div class="details columns">
+                <div class="top-content vehicle-info clearfix">
+                    <div class="columns left">
+                        <h3 class="model-name">
+                            <span class="year">Residential</span>
+                            <span class="model"></span>
+                        </h3>
+                    </div>
+
+                </div>
+
+                <div class="middle-content show-for-medium-up clearfix" ng-class="{'awardsShown': awardsShownIMP}">
+                    <div class="highlights-list clearfix">
+                        <div class="medium-12 columns">
+                            <ul>
+                                <li class="highlight">Single Family Detached</li>
+                                <li class="highlight">Single Family Attached</li>
+                                <li class="highlight">Town Homes</li>
+                                <li class="highlight">Multy Family</li>
+                                <li class="highlight">Outdoor Structures</li>
+                                <li class="highlight">Labor Accomodation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-content clearfix">
+                    <div class="large-12 columns" ng-class="false ? 'previousYear' : ''">
+                        <div class="highlights large-6 columns" ng-show="true">
+
+                        </div>
+                        <div class="build large-6 columns">
+                            <div>
+                                <button routerLink="/choose-property" class="btn-build">
+                                    <span>Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

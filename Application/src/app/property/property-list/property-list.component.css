@@ -1,0 +1,738 @@
+@media only screen and (min-width: 48em){
+    .choose-subaru-header.row {
+       margin: 30px auto 0;
+       justify-content: center;
+       width: 95%;
+   }
+   }
+   .choose-subaru-header {
+       display: flex;
+       flex-wrap: wrap;
+       max-width: none;
+   }
+   .compare-page-header, .choose-subaru-header {
+       position: relative;
+   }
+   div {
+       padding: 0;
+       margin: 0;
+   }
+   .row:before, .row:after {
+       content: " ";
+       display: table;
+   }
+   .row:after {
+       clear: both;
+   }
+   *, *:before, *:after {
+       box-sizing: border-box;
+   }
+   @media only screen and (min-width: 48em){
+       .choose-subaru-header h2.title {
+           order: 1;
+           font-size: 1.7rem;
+           margin: 0px 3% 0px 0px;
+       }
+   }
+   .choose-subaru-header h2 {
+       margin-right: 3%;
+       font-size: 1.25rem;
+   }
+   .compare-page-header h2, .compare-page-header h3, .choose-subaru-header h2, .choose-subaru-header h3 {
+       color: #333;
+       line-height: 1;
+   }
+   h1, h2, h3, h4, h5, h6 {
+       font-family: Helvetica,Arial,sans-serif;
+       font-weight: normal;
+       font-style: normal;
+       text-rendering: optimizeLegibility;
+   }
+   h2 {
+       display: block;
+       margin-block-start: 0.83em;
+       margin-block-end: 0.83em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+   }
+   .choose-subaru-header h2.title span {
+       font-weight: bold;
+   }
+   @media only screen and (min-width: 48em){
+       .choose-subaru-header .text-toggle {
+           font-size: .75rem;
+           line-height: 2;
+       }
+   }
+   .choose-subaru-header .text-toggle {
+       color: #09f;
+       margin-right: 2%;
+       order: 2;
+       font-weight: bold;
+   }   @media only screen and (min-width: 48em){
+       .hide-for-large-up{
+           display: inherit !important;
+       }
+   }
+   .choose-subaru-header .text-toggle button {
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-weight: bold;
+   }
+   button {
+       -webkit-tap-highlight-color: transparent;
+       border: 0;
+       padding: 0;
+       font-family: Helvetica,Arial,sans-serif;
+       background-color: transparent;
+   }
+   button {
+       transition: background ease-in-out .2s,color ease-in-out .2s,border-color ease-in-out .2s,border-width ease-in-out .2s;
+   }
+   button {
+       -webkit-appearance: button;
+       cursor: pointer;
+   }
+   button {
+       overflow: visible;
+   }
+   button {
+       color: inherit;
+       font: inherit;
+       margin: 0;
+   }
+   button {
+      writing-mode: horizontal-tb !important;
+       text-rendering: auto;
+       word-spacing: normal;
+       text-indent: 0px;
+       text-shadow: none;
+       display: inline-block;
+       text-align: center;
+       align-items: flex-start;
+       
+   }
+   button span {
+       transition: color ease-in-out .2s;
+   }
+   @media only screen and (min-width: 48em){
+       .choose-subaru-header div.view-by-container {
+           font-size: 14px;
+       }
+   }
+   .choose-subaru-header .view-by-container {
+       order: 3;
+       text-transform: uppercase;
+       text-align: center;
+       flex-basis: 100%;
+       /* margin: 20px 0; */
+   }
+   @media only screen and (min-width: 48em){
+       .choose-subaru-header div.view-by-links {
+           width: 240px;
+       }
+   }
+   @media only screen and (min-width: 48em){
+    .choose-subaru-header div.view-by-links {
+        margin: 15px auto 0px;
+       
+    }
+}
+   .choose-subaru-header .view-by-links {
+       margin: 0px auto 30px;
+       
+        padding: 15px 0;
+       letter-spacing: 1px; 
+   }
+   .choose-subaru-header .view-by-container .view-by-label {
+       color: #999;
+   }
+   .choose-subaru-header .view-by-container .view-by-link.disabled {
+       pointer-events: none;
+       cursor: default;
+   }
+   .choose-subaru-header .view-by-container .view-by-link {
+       color: #333;
+       padding: 2px;
+       font-weight: bold;
+   }
+   a {
+       transition: color ease-out .2s;
+       -webkit-tap-highlight-color: transparent;
+   }
+   a {
+       text-decoration: none;
+       line-height: inherit;
+       font-family: Helvetica,Arial,sans-serif;
+   }
+   a {
+       background-color: transparent;
+   }
+   .choose-subaru-header .view-by-container .view-by-link.disabled::after {
+       content: "|";
+       color: #dfdfdf;
+       margin-left: 5px;
+       font-size: 12px;
+       vertical-align: 1px;
+       font-weight: lighter;
+   }
+   .choose-subaru-header .view-by-container .view-by-link.selected {
+       color: #09f;
+       cursor: pointer;
+       font-size: 0.9rem;
+   }
+   
+   
+   
+   @media only screen and (min-width: 64em){
+       .vehicle-cards-container {
+           margin-bottom: 0;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-cards-container {
+           padding: 0;
+       }
+   }
+   .vehicle-cards-container {
+       margin: 0 auto 75px;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item-wrap {
+           position: relative;
+           width: 100%;
+           padding: 40px 0;
+       }
+   }
+   @media only screen and (max-width: 48em){
+   .vehicle-card-item-wrap {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+}
+
+   }
+   .hos{
+       width: 100%;
+       min-height: 100%;
+   }
+   @media only screen and (max-width: 48em){
+    .res{
+        width: 100%;
+        height: 302px;
+    }
+}
+@media only screen and (max-width: 48em){
+    .com{
+        width: 100%;
+        height: 302px;
+    }
+}
+   @media only screen and (max-width: 48em){
+    .hos{
+        width: 100%;
+        height: 302px;
+    }
+}
+@media only screen and (max-width: 48em){
+    .uni{
+        width: 100%;
+        height: 302px;
+    }
+}
+@media only screen and (max-width: 48em){
+    .parking{
+        width: 100%;
+        height: 302px;
+    }
+}
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item-wrap .background {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-size: cover;
+       }
+   }
+   div.background {
+       margin: 0;
+       padding: 0;
+   }
+   
+   .vehicle-card-item.row {
+       width: 96%;
+       box-shadow: 0 18px 25px 0 rgba(0,0,0,0.10);
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item {
+           transform: scale(0.95,0.95);
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item {
+           max-width: 960px;
+           position: relative;
+           
+       }
+   }
+   .row {
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+   div.vehicle-card-item{
+       padding: 0;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .image-slider {
+           width: 50%;
+       }
+   }
+   
+   .vehicle-cards-container .columns {
+       padding-left: 0;
+       padding-right: 0;
+   }
+   @media only screen and (min-width: 48em){
+   .columns {
+           position: relative;
+           float: left;
+       }
+   }
+   [class*="column"]+[class*="column"]:last-child {
+       float: right;
+   }
+   
+   @media only screen and (min-width: 48em){
+   .vehicle-card-item .details {
+       border-top: 0;
+       width: 50%;
+   }
+   }
+   .vehicle-card-item .details {
+       background-color: #fff;
+       position: inherit;
+   }
+   .vehicle-cards-container .columns {
+       padding-left: 0;
+       padding-right: 0;
+   }
+   div.details.columns {
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .top-content {
+           height: 48px;
+           line-height: 70px;
+           padding: 0px 15px;
+           border: 0;
+           margin-top: 10px;
+           margin-left: 1px;
+       }
+   }
+   div.top-content{
+       margin: 0;
+   }
+   .clearfix:before, .clearfix:after {
+       content: " ";
+       display: table;
+   }
+   .clearfix:after {
+       clear: both;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .top-content .left {
+           width: auto;
+       }
+   }
+   .vehicle-card-item .vehicle-info .left {
+       text-align: left;
+       width: 50%;
+       line-height: 47px;
+       top: 7px;
+   }
+   @media only screen and (min-width: 48em){
+       .left {
+               /* position: relative; */
+               float: left !important;
+           }
+       }
+       div.left{
+           margin: 0;
+           padding: 0;
+       }
+       @media only screen and (max-width: 79.938em) and (min-width: 48em){
+           .vehicle-card-item .model-name {
+               padding-left: 15px;
+               font-size: 1.125rem;
+           }
+       }
+       @media only screen and (min-width: 48em){
+           .vehicle-card-item .model-name {
+               line-height: 1;
+               color: #333;
+               margin: 0;
+           }
+       }
+       .vehicle-card-item .model-name {
+           display: inline-block;
+           text-align: left;
+           font-size: 1.125rem;
+       }
+       h3 {
+           font-weight: bold;
+           margin: 0;
+           margin-block-start: 1em;
+           margin-block-end: 1em;
+           margin-inline-start: 0px;
+           margin-inline-end: 0px;
+       }
+   
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .model-name .year {
+           display: inline-block;
+       }
+   }
+   .vehicle-card-item .model-name .model {
+       display: block;
+   }
+   .vehicle-card-item .model-name .model {
+       font-weight: 700;
+   }
+   @media only screen and (max-width: 47.938em){
+       .vehicle-card-item-wrap .top-content .right {
+           width: 50%;
+           padding: 0;
+       }
+   }
+   
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .top-content .right {
+           margin-top: 5px;
+           /* padding-left: 0; */
+       }
+   }
+   .vehicle-card-item .top-content .right {
+       text-align: right;
+       width: 38%;
+   }
+   .right {
+       float: right !important;
+   }
+   div.right{
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .basic-info {
+           padding-right: 18px;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .basic-info {
+           text-align: right;
+       }
+   }
+   div.basic-info{
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .msrp{
+           display: block;
+           width: 44%;
+           float: left;
+       }
+   }
+   .vehicle-card-item .msrp {
+       line-height: 1.15;
+   }
+   div.msrp{
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .msrp .text-label {
+           font-size: 1.0625vw;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .msrp .text-label {
+           flex-basis: 100%;
+           text-align: left;
+       }
+   }
+   .vehicle-card-item .msrp .text-label {
+       color: #999;
+       float: left;
+       padding-right: 5px;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .price {
+           font-size: 1.42vw;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .price {
+           float: left;
+       }
+   }
+   .vehicle-card-item .price {
+       font-weight: 700;
+   }
+   .vehicle-card-item .price {
+       color: #333;
+       display: inline-block;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .asterick {
+           font-size: 14px;
+           padding-left: 1px;
+           letter-spacing: 0;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .asterick {
+           float: left;
+       }
+   }
+   .vehicle-card-item .asterick {
+       color: #333;
+       display: inline-block;
+       line-height: 1;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .middle-content {
+           padding: 0 20px;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .middle-content {
+           height: 184px;
+           opacity: 1;
+       }
+   }
+   .vehicle-card-item .middle-content {
+       min-height: 151px;
+       position: relative;
+       text-align: left;
+   }
+   @media only screen and (min-width: 48em){
+       .show-for-medium-up{
+           display: inherit !important;
+       }
+   }
+   div.middle-content{
+       margin: 0;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .middle-content:before {
+           content: '';
+           position: absolute;
+           transform: translate(-50%,0);
+           left: 50%;
+           top: 2px;
+           background-color: #efefef;
+           height: 1px;
+           width: calc(100% - 60px);
+       }
+   }
+   .clearfix:before {
+       display: table;
+   }
+   .clearfix:after {
+       content: " ";
+       display: table;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .middle-content .highlights-list {
+           padding-left: 0;
+           padding-right: 0;
+           padding-top: 15px;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .middle-content .highlights-list {
+           position: absolute;
+           opacity: 1;
+           height: auto;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .middle-content .highlights-list {
+           transition: opacity .5s;
+       }
+   }
+   @media only screen and (min-width: 48em) and (orientation: landscape){
+       .highlights-list {
+           overflow: hidden;
+       }
+   }
+   div.highlights-list{
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (min-width: 48em){
+       .medium-12 {
+           width: 100%;
+       }
+   }
+   div.columns{
+       margin: 0;
+       padding: 0;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .middle-content .highlights-list ul {
+           margin-left: 20px;
+           padding: 0;
+       }
+   }
+   @media only screen and (min-width: 48em) and (orientation: landscape){
+       .highlights-list ul {
+           float: left;
+       }
+   }
+   .highlights-list ul {
+       margin-bottom: 0;
+       width: 100%;
+   }
+   ul {
+       font-size: 1rem;
+       list-style-position: outside;
+       font-family: inherit;
+       margin: 0px 0px 0px 20px;
+       padding: 0;
+       list-style: none;
+       display: block;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+       padding-inline-start: 40px;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .middle-content .highlights-list .highlight {
+           font-size: .84375rem;
+       }
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .highlights-list .highlight {
+           padding-right: 21px;
+           margin-bottom: 10px;
+       }
+   }
+   .highlights-list .highlight {
+       line-height: 1.3;
+       color: #666;
+   }
+   @media only screen and (min-width: 48em) and (orientation: landscape){
+       .highlights-list ul li {
+           float: left;
+           width: 100%;
+       }
+   }
+   .highlights-list ul li {
+       padding: 0;
+       list-style: none;
+       text-indent: -20px;
+   }
+   li{
+       margin: 0;
+   }
+   li {
+       font-family: Helvetica,Arial,sans-serif;
+       font-weight: normal;
+       font-style: normal;
+       display: list-item;
+       text-align: -webkit-match-parent;
+   }
+   .highlights-list ul li:before {
+       content: '\2022';
+       color: #666;
+       font-size: 1rem;
+       padding-right: 4px;
+       vertical-align: middle;
+       line-height: .5;
+       margin-left: .24rem;
+   }
+   div.bottom-content {
+       margin: 0;
+       padding: 0;
+   }
+   .clearfix:before, .clearfix:after {
+       content: " ";
+       display: table;
+   }
+   .clearfix:after {
+       clear: both;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .details .large-12.columns {
+           display: flex;
+       }
+   }
+   .columns{
+       width: 100%;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .bottom-content button {
+           height: 60px;
+       }
+   }
+   .vehicle-card-item .bottom-content button {
+       display: block;
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       border: 0;
+       outline: 0;
+       height: 70px;
+   }
+   @media only screen and (max-width: 79.938em) and (min-width: 48em){
+       .vehicle-card-item .btn-build {
+           font-size: .75rem;
+       }
+   }
+   .vehicle-card-item .btn-build {
+       text-transform: uppercase;
+       font-weight: bold;
+       letter-spacing: 1px;
+   }
+   .btn-build {
+       text-align: center;
+   }
+   .btn-build {
+       background-color: #09f;
+       color: #fff;
+   }
+   .btn-build:hover{
+       background-color: black;
+   }
+   button {
+       -webkit-tap-highlight-color: transparent;
+       font-family: Helvetica,Arial,sans-serif;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .btn-build [class^="icon-"] {
+           display: block;
+       }
+   }
+   
+   .btn-build [class^="icon-"] {
+       color: #fff;
+   }
+   @media only screen and (min-width: 48em){
+       .vehicle-card-item .btn-build span {
+           display: inline-block;
+           font-size: .8125rem;
+           line-height: 1.7;
+       }
+   }
+   button span{
+       transition: color ease-in-out .2s;
+   }
+  

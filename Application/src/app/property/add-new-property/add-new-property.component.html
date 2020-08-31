@@ -1,0 +1,246 @@
+<div class="container">
+    <!-- <div class="row">
+        <div class="col Head">{{title}}</div>
+        <div class="line1"></div>
+        <div class="col Head">Property Details</div>
+    </div>
+    <div class="line">
+
+    </div> -->
+    <div class="row">
+
+        <!-- First half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 line">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title}}</p>
+            <form [formGroup]="propertyForm">
+                <div style="margin-top: 20px;">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputzipCode " style="display: block;">Zip Code</label>
+                            <div style="border-bottom: none;padding: 0em 0;margin-top: -3px;">
+                                <mat-form-field appearance="outline"
+                                class="example-full-width autocomplete-container">
+
+                                    <input formControlName="zipCode" type="text " id="inputzipCode" placeholder="Zipcode"
+                                         matInput [matAutocomplete]="auto" style="padding: 6px 0px;">
+                                    <mat-autocomplete #auto="matAutocomplete"
+                                        (optionSelected)="onZipCodeChange($event.option.value)">
+                                        <mat-option *ngFor="let option of zipCodes" [value]="option.Zipcode">
+                                            {{option.Zipcode}}
+                                        </mat-option>
+                                    </mat-autocomplete>
+                                </mat-form-field>
+                            </div>
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['zipCode'].valid && (propertyForm.controls['zipCode']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['zipCode']?.errors.required ">
+                                    Please enter a zipCode
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputlocation ">Location</label>
+                            <input formControlName="location" type="text " class="form-control " id="inputlocation"
+                                placeholder="location">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['location'].valid && (propertyForm.controls['location']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['location']?.errors.required ">
+                                    Please enter a location
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input formControlName="city" type="text " class="form-control "
+                                id="inputCity " placeholder="City name ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['city'].valid && (propertyForm.controls['city']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['city']?.errors.required ">
+                                    Please enter a city
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputState ">State</label>
+                            <input formControlName="state" type="state " class="form-control " id="inputState "
+                                placeholder="State ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['state'].valid && (propertyForm.controls['state']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['state']?.errors.required ">
+                                    Please enter a State
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputAddress ">Address</label>
+                        <input formControlName="address1" type="text " class="form-control " id="inputAddress "
+                            placeholder="1234 Main St ">
+                        <input formControlName="address2" style="margin-top: 10px;" type="text " class="form-control "
+                            id="inputAddress2 " placeholder="Apartment, studio, or floor ">
+                        <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                            *ngIf="!propertyForm.controls['address1'].valid && (propertyForm.controls['address1']?.touched || submitForm)">
+                            <div *ngIf="propertyForm.controls['address1']?.errors.required ">
+                                Please enter a Address
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row" *ngIf=false>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTelephone1">Telephone</label>
+                            <input formControlName="telephone1" type="text " class="form-control " id="inputTelephone1">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['telephone1'].valid && (propertyForm.controls['telephone1']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['telephone1']?.errors.required ">
+                                    Please enter telephone
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTelephone2" class="show">&nbsp; </label>
+                            <input formControlName="telephone2" type="text " class="form-control "
+                                id="inputTelephone2 ">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['telephone2'].valid && (propertyForm.controls['telephone2']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['telephone2']?.errors.required ">
+                                    Please enter telephone
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputTax ">Tax Map No</label>
+                            <input type="text " class="form-control " id="inputTax" placeholder="Tax Map No"
+                                formControlName="tax" [ngClass]="{ 'is-invalid': f.tax.errors }" />
+                            <div *ngIf="f.tax.errors" class="invalid-feedback">
+                                <div *ngIf="f.tax.errors.required">Tax Map No is required</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Current Status of Property</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="status" class="form-control ">
+                                <option>Undeveloped lot</option>
+                                <option>Developed lot</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Site Topography</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="topology" class="form-control ">
+                                <option>Regular Site</option>
+                                <option>Normal Site</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Is there existing building on site</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <select formControlName="isBuildingExists" class="form-control ">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 ">
+                            <label for="inputStatus">Existing building area in sqft.</label>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <input formControlName="buildingArea" type="text " class="form-control "
+                                id="inputBuildingArea">
+                            <div class="row" style="color: red;font-size:16x;padding: 0 4%;"
+                                *ngIf="!propertyForm.controls['buildingArea'].valid && (propertyForm.controls['buildingArea']?.touched || submitForm)">
+                                <div *ngIf="propertyForm.controls['buildingArea']?.errors.required ">
+                                    Please enter existing building
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Second Half -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="Head" style="border-bottom: 2px solid #dee2e6;">{{title1}}</p>
+            <div style="font-size: 14px;">
+
+
+                <div>Dear <b>{{selectedUser}}</b>,<br>
+                    <span>Project location registered as below </span>,<br>
+                    <span style="margin-left: 35px;"><b>{{f.address1.value}}</b></span><br><span
+                        style="margin-left: 35px;"><b>{{f.address2.value}}</b></span><br><span
+                        style="margin-left: 35px;"><b>{{f.zipCode.value}}</b></span><br>
+
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <span><b>Tax Map No {{f.tax.value}}</b></span><br>
+                        <span><b>Current Zoning</b></span><br>
+                        <span><b>Maximum Area to be Built on Lot</b></span><br>
+                        <span><b>Current Status</b></span><br>
+                        <span><b>Site Topography</b></span><br>
+                        <span><b>Existing Building Area</b></span><br>
+                        <span><b>Building Code</b></span><br>
+                        <span><b>Snow Loads</b></span><br>
+                        <span><b>Frost Depth</b></span><br>
+                        <span><b>Wind Speed</b></span><br>
+                        <span><b>Siesmic Co-efficient</b></span><br>
+                        <span><b>Soil Types</b></span>
+                    </div>
+                    <div class="col-4">
+                        <span><b>{{zipCode?.Zoning}}</b></span><br>
+                        <span><b>{{zipCode?.BuildingArea}} sqft</b></span><br>
+                        <span><b> {{f.status.value}}</b></span><br>
+                        <span><b>{{f.topology.value}}</b></span><br>
+                        <span><b>{{f.buildingArea.value}} sqft</b></span><br>
+                        <span><b>{{zipCode?.BuildingCode}}</b></span><br>
+                        <span><b>{{zipCode?.SnowLoad}} psf</b></span><br>
+                        <span><b>{{zipCode?.FrostDepth}}"</b></span><br>
+                        <span><b>{{zipCode?.WindSpeed}} mph</b></span><br>
+                        <span><b>Ss {{zipCode?.Ss}} S1 {{zipCode?.S1}}</b></span><br>
+                        <span><b>{{zipCode?.SoilType}}</b></span><br>
+                    </div>
+                    <div class="col-4">
+                        <span><img src="../../../assets/Alexandria VA 22312.PNG" alt="Girl in a jacket" width="600"
+                                height="300" style="border: 1px solid gray;"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button type="submit " class="btn "
+                style="float: right;margin-top: 40px;margin-bottom: 10px;background-color: #80d4ff;font-weight: bold;"
+                (click)="showNextPage()">{{button}}</button>
+        </div>
+
+    </div>
+</div>
